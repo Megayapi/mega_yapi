@@ -45,6 +45,10 @@ onUnmounted(() => {
 </template>
 
 <style>
+body {
+  font-family: "Inter var", sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
 .p-ripple {
   position: absolute;
   overflow: hidden;
