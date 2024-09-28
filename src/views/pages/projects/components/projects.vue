@@ -1,4 +1,11 @@
 <script setup lang="ts">
+import p1 from '../../../../assets/images/projects/p1.jpg'
+import p2 from '../../../../assets/images/projects/p2.jpg'
+import p3 from '../../../../assets/images/projects/p3.jpg'
+import p4 from '../../../../assets/images/projects/p4.jpg'
+import p5 from '../../../../assets/images/projects/p5.jpg'
+import p6 from '../../../../assets/images/projects/p6.jpg'
+import p7 from '../../../../assets/images/projects/p7.jpg'
 import type { Work } from '~/core/types'
 
 const props = defineProps<{
@@ -11,18 +18,30 @@ const updateIndex = (newIndex: number | undefined) => {
     activeIndex.value = newIndex
 }
 
-const currentImage = computed(() => {
-  if (props.works.length === 0 || activeIndex.value < 0 || activeIndex.value >= props.works.length)
-    return ''
-  else
-    return props.works[activeIndex.value].img
+const activeImage = computed(() => {
+  switch (activeIndex.value) {
+    case 0:
+      return p1
+    case 1:
+      return p2
+    case 2:
+      return p3
+    case 3:
+      return p4
+    case 4:
+      return p5
+    case 5:
+      return p6
+    case 6:
+      return p7
+  }
 })
 </script>
 
 <template>
   <div v-if="!useAppStore().responsive" class="flex justify-content-between overflow-hidden gap-5 w-full h-full">
     <div v-animateonscroll="{ enterClass: 'fadeinleft' }" class="w-full overflow-hidden m-5 border-round-xl animation-duration-1000 animation-ease-in-out">
-      <Image preview image-style="width: 100%; height: 100%;" :src="`data:image/jpg;base64,${currentImage}`" />
+      <img class="h-full" :src="activeImage">
     </div>
     <Accordion
       v-animateonscroll="{ enterClass: 'fadeinright' }"
@@ -31,7 +50,7 @@ const currentImage = computed(() => {
       :active-index="index"
       @update:active-index="updateIndex"
     >
-      <AccordionTab v-for="work in works" :key="work.id" class="w-full" content-class="w-full" :header="work.name">
+      <AccordionTab v-for="work in props.works" :key="work.id" class="w-full" content-class="w-full" :header="work.name">
         <label class="p-2">{{ work.about }}</label>
       </AccordionTab>
     </Accordion>
@@ -39,7 +58,7 @@ const currentImage = computed(() => {
   <div v-else class="h-full overflow-auto">
     <div class="h-screen">
       <div class="overflow-hidden m-4 border-round-xl ">
-        <Image preview image-style="width: 100%; height: 100%;" :src="`data:image/jpg;base64,${currentImage}`" />
+        <img class="w-full" :src="activeImage">
       </div>
       <Accordion
         class="flex flex-column  h-full"
@@ -47,7 +66,7 @@ const currentImage = computed(() => {
         :active-index="index"
         @update:active-index="updateIndex"
       >
-        <AccordionTab v-for="work in works" :key="work.id" class="w-full" content-class="w-full" :header="work.name">
+        <AccordionTab v-for="work in props.works" :key="work.id" class="w-full" content-class="w-full" :header="work.name">
           <label>{{ work.about }}</label>
         </AccordionTab>
       </Accordion>

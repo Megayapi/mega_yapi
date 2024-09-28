@@ -5,7 +5,6 @@ html, body {
   font-display: swap;
   font-style: normal;
   font-named-instance: "Regular";
-  src: url("./fonts/Inter-roman.var.woff2?v=3.19") format("woff2");
 }
     
 ::-webkit-scrollbar { width: 6px; }
@@ -124,7 +123,7 @@ routerSide {
     height: calc(100% - 60px);
     overflow: auto;
 }
-// if you are not using the footer, please replace 120px with 60px in routerSide
+
 .logo {
     padding-left: 20px;
     display: flex;

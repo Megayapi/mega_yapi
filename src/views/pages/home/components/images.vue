@@ -1,16 +1,11 @@
 <script setup lang="ts">
-import { ref, watch } from 'vue'
-import type { BestWork } from '~/core/types'
+import bw1 from '../../../../assets/images/best_works/bw1.jpg'
+import bw2 from '../../../../assets/images/best_works/bw2.jpg'
+import bw3 from '../../../../assets/images/best_works/bw3.jpg'
+import bw4 from '../../../../assets/images/best_works/bw4.jpg'
+import bw5 from '../../../../assets/images/best_works/bw5.jpg'
 
-const props = defineProps<{
-  bestWorks: BestWork[]
-}>()
-
-const images = ref<(string | ArrayBuffer)[]>([])
-
-const setImage = () => {
-  images.value = props.bestWorks.map(work => work.img)
-}
+const images = ref<(string | ArrayBuffer)[]>([bw1, bw2, bw3, bw4, bw5])
 
 const count = computed(() => {
   return images.value.length
@@ -24,9 +19,20 @@ const prev = computed(() => {
   return activeIndex.value !== 0
 })
 
-watch(() => props.bestWorks, (newWorks) => {
-  setImage()
-}, { immediate: true })
+const activeImage = computed(() => {
+  switch (activeIndex.value) {
+    case 0:
+      return bw1
+    case 1:
+      return bw2
+    case 2:
+      return bw3
+    case 3:
+      return bw4
+    case 4:
+      return bw5
+  }
+})
 </script>
 
 <template>
@@ -39,8 +45,8 @@ watch(() => props.bestWorks, (newWorks) => {
     :show-indicators="!useAppStore().responsive"
     change-item-on-indicator-hover
   >
-    <template #item="slotProps">
-      <Image preview height="600" width="600" :src="`data:image/jpg;base64,${slotProps.item}`" class="border overflow-hidden" />
+    <template #item="">
+      <img style="width: 600px; height: 600px;" :src="activeImage" class="border overflow-hidden">
     </template>
   </Galleria>
   <div v-if="useAppStore().responsive" class="flex w-full mt-2 justify-content-between">

@@ -49,7 +49,6 @@ export interface Work {
   id: string
   name: string
   about: string
-  img: string | ArrayBuffer
 }
 
 export interface BestWork {
