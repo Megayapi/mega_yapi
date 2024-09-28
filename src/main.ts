@@ -13,15 +13,6 @@ export const router = createRouter({
   routes,
 })
 
-export const messages = Object.fromEntries(
-  Object.entries(
-    import.meta.glob<{ default: any }>('/locales/*.y(a)?ml', { eager: true }))
-    .map(([key, value]) => {
-      const yaml = key.endsWith('.yaml')
-      return [key.slice(9, yaml ? -5 : -4), value.default]
-    }),
-)
-
 Object.values(import.meta.glob<{ install: RVModule }>('./core/modules/*.ts', { eager: true }))
   .forEach(i => i.install?.({ app, router }))
 
