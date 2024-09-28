@@ -1,7 +1,4 @@
 <script setup lang="ts">
-import DynamicDialog from 'primevue/dynamicdialog'
-import Toast from 'primevue/Toast'
-import ConfirmDialog from 'primevue/ConfirmDialog'
 useHead({
   title: 'MEGA YAPI',
   htmlAttrs: { class: appMode.value },
@@ -31,9 +28,6 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <Toast />
-  <ConfirmDialog />
-  <DynamicDialog />
   <header>
     <TheHeader />
   </header>
