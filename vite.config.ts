@@ -6,7 +6,6 @@ import Pages from 'vite-plugin-pages'
 import Layouts from 'vite-plugin-vue-layouts'
 import Components from 'unplugin-vue-components/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
-import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import mkcert from 'vite-plugin-mkcert'
 import IconsResolver from 'unplugin-icons/resolver'
 import { PrimeVueResolver } from 'unplugin-vue-components/resolvers'
@@ -74,7 +73,6 @@ export default defineConfig(({ mode }) => {
         imports: [
           'vue',
           'vue-router',
-          'vue-i18n',
           'vue/macros',
           '@vueuse/head',
           '@vueuse/core',
@@ -107,14 +105,6 @@ export default defineConfig(({ mode }) => {
             customCollections: ['custom'],
           }),
         ],
-      }),
-
-      // https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n
-      VueI18n({
-        runtimeOnly: true,
-        compositionOnly: true,
-        fullInstall: true,
-        include: [path.resolve(__dirname, 'locales/**')],
       }),
 
     ],

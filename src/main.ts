@@ -1,7 +1,6 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { setupLayouts } from 'virtual:generated-layouts'
-import { createI18n } from 'vue-i18n'
 import App from './App.vue'
 import type { RVModule } from '~/core/types'
 import generatedRoutes from '~pages'
@@ -23,13 +22,7 @@ export const messages = Object.fromEntries(
     }),
 )
 
-const i18n = createI18n({
-  legacy: false,
-  locale: 'tr',
-  messages,
-})
-
 Object.values(import.meta.glob<{ install: RVModule }>('./core/modules/*.ts', { eager: true }))
-  .forEach(i => i.install?.({ app, router, i18n }))
+  .forEach(i => i.install?.({ app, router }))
 
 app.mount('#app')

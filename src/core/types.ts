@@ -2,9 +2,8 @@ import type { RouteMeta, Router } from 'vue-router'
 
 import type { MenuItem } from 'primevue/menuitem'
 import type { App } from 'vue'
-import type { I18n } from 'vue-i18n'
 
-export type RVModule = (ctx: { app: App<Element>; router: Router; i18n: I18n }) => void
+export type RVModule = (ctx: { app: App<Element>; router: Router }) => void
 
 export interface NavItem extends MenuItem {}
 
