@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     Button: typeof import('primevue/button')['default']
     Card: typeof import('./../views/pages/about/components/card.vue')['default']
     Commands: typeof import('./../views/pages/home/components/commands.vue')['default']
+    Contact: typeof import('./../views/components/contact.vue')['default']
     Coworks: typeof import('./../views/pages/home/components/coworks.vue')['default']
     Divider: typeof import('primevue/divider')['default']
     Galleria: typeof import('primevue/galleria')['default']
@@ -21,6 +22,7 @@ declare module '@vue/runtime-core' {
     Rating: typeof import('primevue/rating')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    SpeedDial: typeof import('primevue/speeddial')['default']
     Tag: typeof import('primevue/tag')['default']
     TheHeader: typeof import('./../views/components/TheHeader.vue')['default']
   }

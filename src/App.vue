@@ -28,7 +28,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <header>
+  <header class="z-5">
     <TheHeader />
   </header>
   <routerSide
@@ -38,9 +38,11 @@ onUnmounted(() => {
           style: `background: var(--blue-400); opacity: 0.09`,
         },
       },
-    }" class="v-ripple overflow-hidden"
+    }"
+    class="v-ripple overflow-hidden"
   >
     <RouterView />
+    <Contact />
   </routerSide>
 </template>
 

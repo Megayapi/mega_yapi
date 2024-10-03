@@ -12,24 +12,46 @@ const items = ref([
     },
   },
   {
-    label: 'İşlerimiz',
+    label: 'Hizmetlerimiz',
     icon: 'pi pi-lightbulb',
-    command: () => {
-      router.push('/projects')
-    },
+    items: [{
+      label: 'Cam Balkon Sistemler',
+      command: () => router.push({ name: 'project', params: { project: 'cam_balkon_sistemler' } }),
+    }, {
+      label: 'Ayna Tasarımı',
+      command: () => router.push({ name: 'project', params: { project: 'ayna_tasarımı' } }),
+    }, {
+      label: 'Yenileme',
+      command: () => router.push({ name: 'project', params: { project: 'yenileme' } }),
+    }, {
+      label: 'Bakım ve Onarım',
+      command: () => router.push({ name: 'project', params: { project: 'bakım_onarım' } }),
+    }, {
+      label: 'PVC',
+      command: () => router.push({ name: 'project', params: { project: 'pvc' } }),
+    }, {
+      label: 'Duşakabin',
+      command: () => router.push({ name: 'project', params: { project: 'duşakabin' } }),
+    }, {
+      label: 'Plise Perde ve Sineklik',
+      command: () => router.push({ name: 'project', params: { project: 'plise_perde_sineklik' } }),
+    }, {
+      label: 'Camlı ve Camsız Aliminyum Korkuluk',
+      command: () => router.push({ name: 'project', params: { project: 'camlı_camsız_aliminyum_korkuluk' } }),
+    }],
   },
   {
     label: 'Bize Ulaşın',
     icon: 'pi pi-phone',
     command: () => {
-      router.push('/contact')
+      router.push({ name: 'contact' })
     },
   },
   {
     label: 'Biz Kimiz',
     icon: 'pi pi-paperclip',
     command: () => {
-      router.push('/about')
+      router.push({ name: 'about' })
     },
   },
 ])

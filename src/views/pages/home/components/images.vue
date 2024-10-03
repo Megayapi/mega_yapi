@@ -4,9 +4,21 @@ import bw2 from '../../../../assets/images/best_works/bw2.jpg'
 import bw3 from '../../../../assets/images/best_works/bw3.jpg'
 import bw4 from '../../../../assets/images/best_works/bw4.jpg'
 import bw5 from '../../../../assets/images/best_works/bw5.jpg'
-
-const images = ref<(string | ArrayBuffer)[]>([bw1, bw2, bw3, bw4, bw5])
-
+import bw6 from '../../../../assets/images/best_works/bw6.jpg'
+import bw7 from '../../../../assets/images/best_works/bw7.jpg'
+import bw8 from '../../../../assets/images/best_works/bw8.jpg'
+import bw9 from '../../../../assets/images/best_works/bw9.jpg'
+import bw10 from '../../../../assets/images/best_works/bw10.jpg'
+import bw11 from '../../../../assets/images/best_works/bw11.jpg'
+import bw12 from '../../../../assets/images/best_works/bw12.jpg'
+import bw13 from '../../../../assets/images/best_works/bw13.jpg'
+import bw14 from '../../../../assets/images/best_works/bw14.jpg'
+import bw15 from '../../../../assets/images/best_works/bw15.jpg'
+const images = ref<(string | ArrayBuffer)[]>([
+  bw1, bw2, bw3, bw4, bw5,
+  bw6, bw7, bw8, bw9, bw10,
+  bw11, bw12, bw13, bw14, bw15,
+])
 const count = computed(() => {
   return images.value.length
 })
@@ -31,6 +43,26 @@ const activeImage = computed(() => {
       return bw4
     case 4:
       return bw5
+    case 5:
+      return bw6
+    case 6:
+      return bw7
+    case 7:
+      return bw8
+    case 8:
+      return bw9
+    case 9:
+      return bw10
+    case 10:
+      return bw11
+    case 11:
+      return bw12
+    case 12:
+      return bw13
+    case 13:
+      return bw14
+    case 14:
+      return bw15
   }
 })
 </script>

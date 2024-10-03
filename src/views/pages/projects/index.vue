@@ -1,11 +1,8 @@
 <script setup lang="ts">
-const adminStore = useAdminStore()
 </script>
 
 <template>
-  <div v-if="useAdminStore().works" class="w-full h-full">
-    <Projects :works="adminStore.works" />
-  </div>
+  <RouterView />
 </template>
 
 <route lang="yaml">
