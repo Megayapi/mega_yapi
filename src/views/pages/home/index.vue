@@ -11,7 +11,7 @@ const appStore = useAppStore()
     v-if="!appStore.responsive"
     class="flex flex-column overflow-hidden w-full h-full"
   >
-    <div class="flex w-full h-full justify-content-around px-8">
+    <div class="flex w-full h-full justify-content-around overflow-y-auto px-8">
       <div class="w-full h-full flex justify-content-center align-items-center">
         <ImagesSide />
       </div>

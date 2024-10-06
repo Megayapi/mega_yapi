@@ -14,6 +14,24 @@ const callPhone = (phone: string) => {
 <template>
   <!-- <Button label="Whatsapp" severity="success" outlined icon="pi pi-whatsapp text-xl" /> -->
   <div v-if="useRouter().currentRoute.value.name !== 'contact'" class="fixed right-0 bottom-0 m-4 flex gap-2">
-    <Button :label="`${formatPhone(useAdminStore().company.phone)}`" severity="info" outlined icon="pi pi-phone text-xl" @click="callPhone(useAdminStore().company.phone)" />
+    <Button :label="`${formatPhone(useAdminStore().company.phone)}`" style="width: 250px; height: 50px;" class="flex justify-content-center align-items-center text-xl text-white flashing-border border-1 border-white" severity="success" outlined icon="pi pi-whatsapp text-2xl" @click="callPhone(useAdminStore().company.phone)" />
   </div>
 </template>
+
+<style scoped>
+@keyframes flash-border {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgb(0, 206, 0);
+  }
+  100% {
+    background-color: transparent;
+  }
+}
+
+.flashing-border {
+  animation: flash-border 2s infinite;
+}
+</style>
