@@ -28,7 +28,7 @@ onUnmounted(() => {
 </script>
 
 <template>
-  <header class="z-5">
+  <header class="">
     <TheHeader />
   </header>
   <routerSide
@@ -44,6 +44,7 @@ onUnmounted(() => {
     <RouterView />
     <Contact />
   </routerSide>
+  <Github />
 </template>
 
 <style>

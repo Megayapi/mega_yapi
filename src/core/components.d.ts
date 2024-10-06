@@ -16,6 +16,7 @@ declare module '@vue/runtime-core' {
     Coworks: typeof import('./../views/pages/home/components/coworks.vue')['default']
     Divider: typeof import('primevue/divider')['default']
     Galleria: typeof import('primevue/galleria')['default']
+    Github: typeof import('./../views/components/github.vue')['default']
     Image: typeof import('primevue/image')['default']
     Images: typeof import('./../views/pages/home/components/images.vue')['default']
     Projects: typeof import('./../views/pages/projects/components/projects.vue')['default']
