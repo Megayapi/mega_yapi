@@ -3,6 +3,7 @@ import img1_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarım
 import img2_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarımı/2.jpg'
 import img3_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarımı/3.jpg'
 import img4_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarımı/4.jpg'
+import img5_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarımı/5.jpg'
 import img1_bakim_onarim from '../../../../assets/images/projects/bakım_onarım/1.jpg'
 import img1_camli_camsiz_aliminyum from '../../../../assets/images/projects/camlı_camsız_aliminyum_korkuluk/1.jpg'
 import img2_camli_camsiz_aliminyum from '../../../../assets/images/projects/camlı_camsız_aliminyum_korkuluk/2.jpg'
@@ -10,13 +11,15 @@ import img3_camli_camsiz_aliminyum from '../../../../assets/images/projects/caml
 import img4_camli_camsiz_aliminyum from '../../../../assets/images/projects/camlı_camsız_aliminyum_korkuluk/4.jpg'
 import img1_dusakabin from '../../../../assets/images/projects/duşakabin/1.jpg'
 import img1_cam_balkon_sistemler from '../../../../assets/images/projects/cam_balkon_sistemler/1.jpg'
+import img2_cam_balkon_sistemler from '../../../../assets/images/projects/cam_balkon_sistemler/2.jpg'
 import img1_plise_perde_sineklik from '../../../../assets/images/projects/plise_perde_sineklik/1.jpg'
+import img2_plise_perde_sineklik from '../../../../assets/images/projects/plise_perde_sineklik/2.jpg'
 import img1_pvc from '../../../../assets/images/projects/pvc/1.jpg'
 import img1_yenileme from '../../../../assets/images/projects/yenileme/1.jpg'
 import img2_yenileme from '../../../../assets/images/projects/yenileme/2.jpg'
 const allImages = {
   ayna_tasarimi: [
-    img1_ayna_tasarimi, img2_ayna_tasarimi, img3_ayna_tasarimi, img4_ayna_tasarimi,
+    img1_ayna_tasarimi, img2_ayna_tasarimi, img3_ayna_tasarimi, img4_ayna_tasarimi, img5_ayna_tasarimi,
   ],
   bakim_onarim: [
     img1_bakim_onarim,
@@ -28,10 +31,10 @@ const allImages = {
     img1_dusakabin,
   ],
   katlanir_cam_balkon: [
-    img1_cam_balkon_sistemler,
+    img1_cam_balkon_sistemler, img2_cam_balkon_sistemler,
   ],
   plise_perde_sineklik: [
-    img1_plise_perde_sineklik,
+    img1_plise_perde_sineklik, img2_plise_perde_sineklik,
   ],
   pvc: [
     img1_pvc,
@@ -97,7 +100,6 @@ const contents = computed(() => {
 const images = computed(() => contents.value?.img)
 const activeIndex = ref<number>(0)
 const appStore = useAppStore()
-// watch(() => useRouter().currentRoute.value.fullPath, _ => activeIndex.value = 0)
 </script>
 
 <template>
