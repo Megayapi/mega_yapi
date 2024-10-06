@@ -9,12 +9,18 @@ const formatPhone = (phone: string): string => {
 const callPhone = (phone: string) => {
   window.location.href = `tel:+90 ${phone}`
 }
+const appStore = useAppStore()
 </script>
 
 <template>
   <!-- <Button label="Whatsapp" severity="success" outlined icon="pi pi-whatsapp text-xl" /> -->
   <div v-if="useRouter().currentRoute.value.name !== 'contact'" class="fixed right-0 bottom-0 m-4 flex gap-2">
-    <Button :label="`${formatPhone(useAdminStore().company.phone)}`" style="width: 250px; height: 50px;" class="flex justify-content-center align-items-center text-xl text-white flashing-border border-1 border-white" severity="success" outlined icon="pi pi-whatsapp text-2xl" @click="callPhone(useAdminStore().company.phone)" />
+    <Button
+      :label="!appStore.responsive ? `${formatPhone(useAdminStore().company.phone)}` : ''"
+      :style="!appStore.responsive ? 'width: 250px; height: 50px;' : ''"
+      class="flex justify-content-center align-items-center text-xl text-white flashing-border border-1 border-white" severity="success" outlined
+      icon="pi pi-whatsapp text-2xl" @click="callPhone(useAdminStore().company.phone)"
+    />
   </div>
 </template>
 
