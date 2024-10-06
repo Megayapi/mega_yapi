@@ -101,19 +101,19 @@ const appStore = useAppStore()
 </script>
 
 <template>
-  <div :class="!appStore.responsive ? 'w-full h-full flex' : 'w-full h-full flex flex-column p-2 overflow-auto'">
+  <div :class="!appStore.responsive ? 'w-full h-full flex' : 'w-full flex flex-column p-2 overflow-auto h-screen'">
     <div class="w-full flex justify-content-center align-items-center">
       <Galleria
         :active-index="activeIndex" :show-thumbnails="false" :show-indicators="true" :indicators-position="!appStore.responsive ? 'right' : 'bottom'"
-        class="border-round-xl overflow-hidden h-full w-full" :value="images"
+        class="border-round-xl  h-full w-full" :value="images"
       >
         <template #item="slotProps">
-          <img class="w-full h-full border overflow-hidden" :src="slotProps.item">
+          <img class="w-full h-full border " :src="slotProps.item">
         </template>
       </Galleria>
     </div>
-    <div class="flex">
-      <div v-if="contents?.key === 'katlanir_cam_balkon'" class="w-full h-full gap-5 flex flex-column justify--content-center">
+    <div class="flex w-full">
+      <div v-if="contents?.key === 'katlanir_cam_balkon'" class="w-full h-full gap-5 flex flex-column justify-content-center">
         <div class="text-3xl text-primary-400 border-1 flex w-full justify-content-center">
           {{ contents?.header }}
         </div>
@@ -157,9 +157,10 @@ const appStore = useAppStore()
             NERLERDE TERCİH EDİLİR : İç içe geçme özelliği ile dar alanlarda sıkça tercih edilen giyotin sistem otomatik ve yenilikçi tasarımı ile rahat kullanım sağlıyor genellikle cafe , düğün salonları , kış bahçelerinde kullanılır
           </div>
         </div>
+        <div class="h-10rem" />
       </div>
 
-      <div v-if="contents?.key === 'bakim_onarim'" class="w-full h-full gap-5 flex flex-column justify--content-center overflow-auto">
+      <div v-if="contents?.key === 'bakim_onarim'" class="w-full h-full gap-5 flex flex-column justify--content-center ">
         <div class="text-3xl text-primary-400 border-1 flex w-full justify-content-center">
           {{ contents?.header }}
         </div>
@@ -171,9 +172,10 @@ const appStore = useAppStore()
             Düzenli bakım çalışmaları, yapıların estetik görünümünde meydana gelebilecek bozulmaları da önleyerek, yapının dış görünüşünü ve mimari değerini korur. Bunun yanı sıra, yapısal ve işlevsel performansın devamlılığını sağlayarak, enerji verimliliğini artırır ve bakım masraflarının daha da yükselmesine neden olabilecek büyük sorunların önüne geçer. Bakım ve onarım işlemleri, binaların zamanla aşınan veya dış etkenlerden zarar gören bileşenlerini ilk günkü haline getirerek, hem güvenli hem de konforlu bir yaşam alanı sunmayı hedefler. Bu süreçler, yapıların hem estetik hem de işlevsel açıdan mükemmel durumda kalmasını sağlar. İhmal edilmesi durumunda ise küçük çaplı arızalar büyüyerek daha maliyetli sorunlara yol açabilir. Bu nedenle, periyodik bakım ve onarım çalışmaları, uzun vadeli sürdürülebilirlik ve maliyet kontrolü açısından büyük önem taşır.
           </div>
         </div>
+        <div class="h-10rem" />
       </div>
 
-      <div v-if="contents?.key === 'ayna_tasarimi'" class="w-full h-full gap-5 flex flex-column justify--content-center overflow-auto">
+      <div v-if="contents?.key === 'ayna_tasarimi'" class="w-full h-full gap-5 flex flex-column justify--content-center ">
         <div class="text-3xl text-primary-400 border-1 flex w-full justify-content-center">
           {{ contents?.header }}
         </div>
@@ -185,9 +187,10 @@ const appStore = useAppStore()
             Modern, klasik, minimal ya da özgün tasarımlarla ayna, iç dekorasyonda güçlü bir araçtır ve banyo, salon, yatak odası gibi birçok alanda kullanılabilir. Ayna tasarımı, mekânın genel estetiğini tamamlayarak, dekorasyonun önemli bir parçası haline gelir.
           </div>
         </div>
+        <div class="h-10rem" />
       </div>
 
-      <div v-if="contents?.key === 'yenileme'" class="w-full h-full gap-5 flex flex-column justify--content-center overflow-auto">
+      <div v-if="contents?.key === 'yenileme'" class="w-full h-full gap-5 flex flex-column justify--content-center ">
         <div class="text-3xl text-primary-400 border-1 flex w-full justify-content-center">
           {{ contents?.header }}
         </div>
@@ -199,9 +202,10 @@ const appStore = useAppStore()
             Ev, ofis veya ticari yapılarda yapılan bu yenileme işlemleri, mekanların hem işlevselliğini hem de kullanım konforunu artırır. Özellikle cam, PVC ve duşakabin gibi malzemeler yenilendiğinde, alanların daha modern ve pratik hale gelmesi sağlanır. Aynı zamanda sineklik ve camekan gibi ek yapı elemanlarının güncellenmesi, mekanların kullanışlılığını artırarak daha konforlu bir yaşam ya da çalışma alanı sunar. Yenileme projeleri, hem yapının uzun ömürlü olmasını sağlar hem de estetik açıdan güncel bir görünüme kavuşturur.
           </div>
         </div>
+        <div class="h-10rem" />
       </div>
 
-      <div v-if="contents?.key === 'pvc'" class="w-full h-full gap-5 flex flex-column justify--content-center overflow-auto">
+      <div v-if="contents?.key === 'pvc'" class="w-full h-full gap-5 flex flex-column justify--content-center ">
         <div class="text-3xl text-primary-400 border-1 flex w-full justify-content-center">
           {{ contents?.header }}
         </div>
@@ -259,9 +263,10 @@ const appStore = useAppStore()
             </div>
           </div>
         </div>
+        <div class="h-10rem" />
       </div>
 
-      <div v-if="contents?.key === 'dusakabin'" class="w-full h-full gap-5 flex flex-column justify--content-center overflow-auto">
+      <div v-if="contents?.key === 'dusakabin'" class="w-full h-full gap-5 flex flex-column justify--content-center ">
         <div class="text-3xl text-primary-400 border-1 flex w-full justify-content-center">
           {{ contents?.header }}
         </div>
@@ -270,9 +275,10 @@ const appStore = useAppStore()
             Duşakabin, banyo alanında suyun etrafa sıçramasını önlemek ve daha düzenli bir kullanım sağlamak amacıyla tasarlanmış kapalı alanlardır. Genellikle cam ve alüminyum çerçeve kombinasyonu ile üretilir ve farklı stil, boyut ve tasarımlarda bulunur. Duşakabinler, estetik açıdan modern bir görünüm sunarken, suyun daha etkili bir şekilde kullanılmasını sağlar. Kullanıcıların mahremiyetini artırırken, temizlik açısından da avantajlar sunar. Farklı cam seçenekleriyle (örneğin, şeffaf, mat veya desenli) kişisel tercihlere göre özelleştirilebilir ve banyo dekorasyonuna uyum sağlar.
           </div>
         </div>
+        <div class="h-10rem" />
       </div>
 
-      <div v-if="contents?.key === 'plise_perde_sineklik'" class="w-full h-full gap-5 flex flex-column justify--content-center overflow-auto">
+      <div v-if="contents?.key === 'plise_perde_sineklik'" class="w-full h-full gap-5 flex flex-column justify--content-center ">
         <div class="text-3xl text-primary-400 border-1 flex w-full justify-content-center">
           {{ contents?.header }}
         </div>
@@ -283,7 +289,7 @@ const appStore = useAppStore()
             </div>
           </div>
           <div>
-            <p>Plise perde, pencere ve kapılarınızda güneş ışığını ve sıcaklığını kontrol etmenizi sağlayan kullanışlı bir yapı elemanıdır. Plise perde, kumaşın katlanarak toplanmasını sağlayan bir mekanizmaya sahiptir. Bu sayede, pencere ve kapılarınızı istediğiniz oranda açıp kapatabilir, ışık geçirgenliğini ve mahremiyeti kontrol edebilirsiniz.</p>
+            Plise perde, pencere ve kapılarınızda güneş ışığını ve sıcaklığını kontrol etmenizi sağlayan kullanışlı bir yapı elemanıdır. Plise perde, kumaşın katlanarak toplanmasını sağlayan bir mekanizmaya sahiptir. Bu sayede, pencere ve kapılarınızı istediğiniz oranda açıp kapatabilir, ışık geçirgenliğini ve mahremiyeti kontrol edebilirsiniz.
           </div>
 
           <div class="text-lg text-primary-400 flex w-full justify-content-start">
@@ -293,7 +299,7 @@ const appStore = useAppStore()
           </div>
 
           <div>
-            <p>Sineklik, sineklerin içeri girmesini engelleyen bir koruyucu sistemdir. Özellikle yaz aylarında, dışarıdan gelen böceklerin yaşam alanınıza girmesini önleyerek daha konforlu bir ortam sağlar.</p>
+            Sineklik, sineklerin içeri girmesini engelleyen bir koruyucu sistemdir. Özellikle yaz aylarında, dışarıdan gelen böceklerin yaşam alanınıza girmesini önleyerek daha konforlu bir ortam sağlar.
           </div>
           <div class="text-lg text-primary-400 flex w-full justify-content-start">
             <div class="border-bottom-1">
@@ -301,13 +307,14 @@ const appStore = useAppStore()
             </div>
           </div>
           <div>
-            <p>Plise perde, hem estetik hem de işlevsel özellikler sunan modern bir iç mekan çözümüdür. Plise perdeler, katlanabilir yapıları sayesinde alan tasarrufu sağlarken, farklı renk ve desen seçenekleri ile dekorasyona uyum sağlar. Sineklik işlevi ise, dışarıdan gelen böceklerin iç mekâna girmesini engelleyerek konforlu bir yaşam alanı oluşturur. Bu sistemler, genellikle pencere ve kapılara uygulanabilir ve kullanıcının ihtiyacına göre açılıp kapatılabilir.</p>
+            Plise perde, hem estetik hem de işlevsel özellikler sunan modern bir iç mekan çözümüdür. Plise perdeler, katlanabilir yapıları sayesinde alan tasarrufu sağlarken, farklı renk ve desen seçenekleri ile dekorasyona uyum sağlar. Sineklik işlevi ise, dışarıdan gelen böceklerin iç mekâna girmesini engelleyerek konforlu bir yaşam alanı oluşturur. Bu sistemler, genellikle pencere ve kapılara uygulanabilir ve kullanıcının ihtiyacına göre açılıp kapatılabilir.
             Plise perde ve sineklik, bir arada kullanılarak hem sinek koruması hem de ışık kontrolü sağlayabilir. Bu kombinasyon, estetik bir görünüm sunarken işlevselliğiyle de dikkat çeker.
           </div>
         </div>
+        <div class="h-10rem" />
       </div>
 
-      <div v-if="contents?.key === 'camli_camsiz_aliminyum_dograma'" class="w-full h-full gap-5 flex flex-column justify--content-center overflow-auto">
+      <div v-if="contents?.key === 'camli_camsiz_aliminyum_dograma'" class="w-full h-full gap-5 flex flex-column justify--content-center ">
         <div class="text-3xl text-primary-400 border-1 flex w-full justify-content-center">
           {{ contents?.header }}
         </div>
@@ -345,6 +352,7 @@ const appStore = useAppStore()
             Camlı ve camsız alüminyum korkuluk sistemleri, güvenlik ve estetik açıdan önemli unsurlardır. Camlı alüminyum korkuluklar, şık ve modern bir görünüm sunarak, balkon, teras ve merdivenlerde kullanım için ideal bir çözümdür. Cam paneller, dış görünümü zarif kılar ve çevre manzarasının kesintisiz bir şekilde izlenmesine olanak tanır. Camsız alüminyum korkuluklar ise daha minimal bir tasarıma sahip olup, sağlam yapıları sayesinde güvenliği artırır. Her iki sistem de dayanıklı, hafif ve bakım gerektirmeyen alüminyum malzemeden üretilir, ayrıca paslanmazlık özelliği sayesinde uzun ömürlüdür. Hem iç hem de dış mekânlarda çeşitli tasarım seçenekleri ile kullanıcıların ihtiyaçlarına göre özelleştirilebilir.,
           </div>
         </div>
+        <div class="h-10rem" />
       </div>
     </div>
   </div>
