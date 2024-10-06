@@ -57,6 +57,9 @@ export const useAdminStore = defineStore('admin', () => {
     name: 'Biaport',
   }, {
     id: '3',
+    name: 'Kaplan Okulları',
+  }, {
+    id: '4',
     name: 've 100\' den fazla memnun müşteri',
   }])
 
