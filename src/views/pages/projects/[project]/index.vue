@@ -15,6 +15,9 @@ import img1_cam_balkon_sistemler from '../../../../assets/images/projects/cam_ba
 import img2_cam_balkon_sistemler from '../../../../assets/images/projects/cam_balkon_sistemler/2.jpg'
 import img1_plise_perde_sineklik from '../../../../assets/images/projects/plise_perde_sineklik/1.jpg'
 import img2_plise_perde_sineklik from '../../../../assets/images/projects/plise_perde_sineklik/2.jpg'
+import img3_plise_perde_sineklik from '../../../../assets/images/projects/plise_perde_sineklik/3.jpg'
+import img4_plise_perde_sineklik from '../../../../assets/images/projects/plise_perde_sineklik/4.jpg'
+import img5_plise_perde_sineklik from '../../../../assets/images/projects/plise_perde_sineklik/5.jpg'
 import img1_pvc from '../../../../assets/images/projects/pvc/1.jpg'
 import img1_yenileme from '../../../../assets/images/projects/yenileme/1.jpg'
 import img2_yenileme from '../../../../assets/images/projects/yenileme/2.jpg'
@@ -35,7 +38,7 @@ const allImages = {
     img1_cam_balkon_sistemler, img2_cam_balkon_sistemler,
   ],
   plise_perde_sineklik: [
-    img1_plise_perde_sineklik, img2_plise_perde_sineklik,
+    img1_plise_perde_sineklik, img2_plise_perde_sineklik, img3_plise_perde_sineklik, img4_plise_perde_sineklik, img5_plise_perde_sineklik,
   ],
   pvc: [
     img1_pvc,
