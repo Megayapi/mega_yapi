@@ -5,6 +5,7 @@ import img3_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarım
 import img4_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarımı/4.jpg'
 import img5_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarımı/5.jpg'
 import img1_bakim_onarim from '../../../../assets/images/projects/bakım_onarım/1.jpg'
+import img2_bakim_onarim from '../../../../assets/images/projects/bakım_onarım/2.jpg'
 import img1_camli_camsiz_aliminyum from '../../../../assets/images/projects/camlı_camsız_aliminyum_korkuluk/1.jpg'
 import img2_camli_camsiz_aliminyum from '../../../../assets/images/projects/camlı_camsız_aliminyum_korkuluk/2.jpg'
 import img3_camli_camsiz_aliminyum from '../../../../assets/images/projects/camlı_camsız_aliminyum_korkuluk/3.jpg'
@@ -22,7 +23,7 @@ const allImages = {
     img1_ayna_tasarimi, img2_ayna_tasarimi, img3_ayna_tasarimi, img4_ayna_tasarimi, img5_ayna_tasarimi,
   ],
   bakim_onarim: [
-    img1_bakim_onarim,
+    img1_bakim_onarim, img2_bakim_onarim,
   ],
   camli_camsiz_aliminyum_dograma: [
     img1_camli_camsiz_aliminyum, img2_camli_camsiz_aliminyum, img3_camli_camsiz_aliminyum, img4_camli_camsiz_aliminyum,
