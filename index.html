@@ -7,16 +7,30 @@
 </head>
 
 <body class="">
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WL52TK3L"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <div id="app"></div>
   <script>
-    (function () {
-      const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-      const setting = localStorage.getItem('color-schema') || 'auto'
-      if (setting === 'dark' || (prefersDark && setting !== 'light'))
-        document.documentElement.classList.toggle('dark', true)
-    })()
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || []
+  w[l].push({
+        'gtm.start': new Date().getTime(),
+        'event': 'gtm.js',
+      })
+
+  const f = d.getElementsByTagName(s)[0]
+  const j = d.createElement(s)
+  const dl = l !== 'dataLayer' ? `&l=${l}` : ''
+  j.async = true
+  j.src = `https://www.googletagmanager.com/gtm.js?id=${i}${dl}`
+  f.parentNode.insertBefore(j, f)
+})(window, document, 'script', 'dataLayer', 'GTM-WL52TK3L')
   </script>
+
   <script type="module" src="/src/main.ts"></script>
+
 </body>
 
 </html>
