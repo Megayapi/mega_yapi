@@ -60,13 +60,13 @@ const formatPhone = (phone: string): string => {
         <Icon icon="line-md:instagram" class="text-3xl" />
       </a>
     </div>
-    <div class="flex gap-4 align-items-center">
+    <a class="flex gap-4 align-items-center" target="_blank" href="https://maps.app.goo.gl/gSJhWV5vYSFfv2Jf9">
       <label class="flex flex-column gap-1 text-center w-18rem">
         <label>Konum</label>
         <label class="text-xl">{{ `${adminStore.company.country} / ${adminStore.company.city}` }}</label>
         <label class="text-xl">{{ adminStore.company.address }}</label>
       </label>
       <Icon icon="line-md:map-marker" class="text-4xl" />
-    </div>
+    </a>
   </div>
 </template>
