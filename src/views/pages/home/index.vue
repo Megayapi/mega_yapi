@@ -25,7 +25,7 @@ const appStore = useAppStore()
           }" align="right" type="dashed"
           class="animation-duration-1000 animation-ease-in-out"
         >
-          <label class="text-2xl">{{ useAdminStore().company.offer }}</label>
+          <label class="text-2xl">{{ "ÜCRETSİZ KEŞİF İÇİN 05449606980" }}</label>
         </Divider>
         <div v-animateonscroll=" { enterClass: 'fadeinright' }" style="width: 80%;" class="text-right animation-duration-1000 animation-ease-in-out">
           {{ useAdminStore().company.about }}
@@ -42,7 +42,7 @@ const appStore = useAppStore()
   <div v-else class="flex flex-column gap-5 h-full overflow-auto">
     <div class="flex flex-column gap-5">
       <div clasS="w-full flex justify-content-center bg-blue-400 text-xl text-center py-1">
-        {{ useAdminStore().company.offer }}
+        {{ "ÜCRETSİZ KEŞİF İÇİN 05449606980" }}
       </div>
       <div class="w-full text-center px-3">
         {{ useAdminStore().company.about }}
