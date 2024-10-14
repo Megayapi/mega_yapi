@@ -14,6 +14,11 @@ export const router = createRouter({
   routes,
 })
 
+router.beforeEach((to, from, next) => {
+  if (!from.name && to.name === 'project')
+    router.push({ name: 'home' })
+  else next()
+})
 Object.values(import.meta.glob<{ install: RVModule }>('./core/modules/*.ts', { eager: true }))
   .forEach(i => i.install?.({ app, router }))
 

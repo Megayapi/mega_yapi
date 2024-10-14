@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
@@ -10,4 +11,4 @@ name: projects
 path: /projects
 meta:
   layout: default
-      </route>
+</route>

@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useRouter } from 'vue-router'
 import img1_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarımı/1.jpg'
 import img2_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarımı/2.jpg'
 import img3_ayna_tasarimi from '../../../../assets/images/projects/ayna_tasarımı/3.jpg'
@@ -21,6 +22,7 @@ import img5_plise_perde_sineklik from '../../../../assets/images/projects/plise_
 import img1_pvc from '../../../../assets/images/projects/pvc/1.jpg'
 import img1_yenileme from '../../../../assets/images/projects/yenileme/1.jpg'
 import img2_yenileme from '../../../../assets/images/projects/yenileme/2.jpg'
+
 const allImages = {
   ayna_tasarimi: [
     img1_ayna_tasarimi, img2_ayna_tasarimi, img3_ayna_tasarimi, img4_ayna_tasarimi, img5_ayna_tasarimi,
