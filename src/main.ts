@@ -50,7 +50,7 @@ export const router = createRouter({
       },
     },
     {
-      path: '/projects/:project', // Dinamik parametre
+      path: '/projects/:project',
       name: 'project',
       component: ProjectDetail,
       meta: {
