@@ -43,10 +43,3 @@ import Contact from './widgets/contact.vue'
 
 }
 </style>
-
-<route lang="yaml">
-name: contact
-path: /contact
-meta:
-  layout: default
-          </route>

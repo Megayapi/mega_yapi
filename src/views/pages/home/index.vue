@@ -72,10 +72,3 @@ const appStore = useAppStore()
 
 }
 </style>
-
-<route lang="yaml">
-name: home
-path: /
-meta:
-  layout: default
-        </route>

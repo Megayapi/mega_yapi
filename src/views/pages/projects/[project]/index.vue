@@ -365,9 +365,3 @@ const appStore = useAppStore()
     </div>
   </div>
 </template>
-
-<route lang="yaml">
-name: project
-meta:
-  layout: default
-</route>

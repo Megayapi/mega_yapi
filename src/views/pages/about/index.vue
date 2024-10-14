@@ -23,10 +23,3 @@ const adminStore = useAdminStore()
   overflow-y: auto;
 }
 </style>
-
-<route lang="yaml">
-name: about
-path: /about
-meta:
-  layout: default
-</route>
