@@ -8,8 +8,9 @@ import generatedRoutes from '~pages'
 export const app = createApp(App)
 
 const routes = setupLayouts(generatedRoutes)
+
 export const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
+  history: createWebHistory('/'),
   routes,
 })
 
