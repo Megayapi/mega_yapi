@@ -24,7 +24,7 @@ const projects = [
 </script>
 
 <template>
-  <div class="flex overflow-y-auto overflow-x-hidden flex-wrap w-full h-full z-0">
+  <div class="flex overflow-y-auto overflow-x-hidden flex-wrap h-full z-0">
     <CardProject
       v-for="(project, index) in projects" :key="index"
       :project="project"
