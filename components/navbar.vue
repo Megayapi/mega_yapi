@@ -1,6 +1,35 @@
 <script setup lang="ts">
-const { defaultLinks } = linkProvider()
+const isDarkMode = ref(false)
+
+onMounted(() => {
+  isDarkMode.value = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+})
 const isOpen = ref(false)
+const defaultLinks = [{
+  label: 'Anasayfa',
+  icon: 'material-symbols:other-houses',
+  to: { name: 'home' },
+  click: () => isOpen.value = false,
+}, {
+  label: 'Hizmetlerimiz',
+  icon: 'material-symbols:home-work',
+  to: { name: 'projects' },
+  click: () => isOpen.value = false,
+}, {
+  label: 'Bize Ulaşın',
+  icon: 'material-symbols:phone-enabled',
+  to: { name: 'contact' },
+  click: () => isOpen.value = false,
+}, {
+  label: 'Biz Kimiz',
+  icon: 'material-symbols:groups',
+  to: { name: 'about' },
+  click: () => isOpen.value = false,
+}, {
+  class: 'flex items-center',
+  icon: 'wi:moon-alt-waning-gibbous-6',
+  click: () => toggleColorMode(),
+}]
 </script>
 
 <template>
