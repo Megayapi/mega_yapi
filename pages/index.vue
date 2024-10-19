@@ -71,20 +71,20 @@ onMounted(() => {
     <div class="w-full flex flex-col lg:flex-row justify-between items-center">
       <Galeria />
       <div class="w-full p-2 h-full py-4 flex flex-col">
-        <div class="lg:text-6xl text-5xl lg:text-left text-right justify-end flex gap-8">
+        <div class="lg:text-6xl text-2xl lg:text-left text-right justify-end flex gap-8">
           <div class="flex flex-col justify-start">
             <label class="text-primary-400"> {{ `+${year}` }} </label>
-            <label class="text-xl"> yıldan fazla <label class="text-green-500 dark:text-green-400"> tecrübe </label> </label>
+            <label class="lg:text-xl text-sm"> yıldan fazla <label class="text-green-500 dark:text-green-400"> tecrübe </label> </label>
           </div>
 
           <div class="flex flex-col justify-start">
             <label class="text-primary-400"> {{ `+${customer}` }} </label>
-            <label class="text-xl"> 'den fazla <label class="text-green-500 dark:text-green-400"> müşteri </label> </label>
+            <label class="lg:text-xl text-sm"> 'den fazla <label class="text-green-500 dark:text-green-400"> müşteri </label> </label>
           </div>
 
-          <div class="flex flex-col justify-start w-[200px]">
+          <div class="flex flex-col justify-start">
             <label class="text-primary-400"> {{ `%${satisfaction}` }} </label>
-            <label class="text-xl"> müşteri <label class="text-green-500 dark:text-green-400"> memnuniyeti </label> </label>
+            <label class="lg:text-xl text-sm"> müşteri <label class="text-green-500 dark:text-green-400"> memnuniyeti </label> </label>
           </div>
         </div>
         <label class="text-center text-xl lg:px-8 md:p-4 sm:p-2">

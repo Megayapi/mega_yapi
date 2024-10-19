@@ -1,11 +1,10 @@
 <script setup>
 import pvc1 from '../../assets/projects/pvc/1.jpg'
-import pvc2 from '../../assets/projects/pvc/2.jpg'
 
 definePageMeta({
   name: 'pvc',
 })
-const items = [pvc1, pvc2]
+const items = [pvc1]
 </script>
 
 <template>
