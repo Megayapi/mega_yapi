@@ -9,10 +9,11 @@ const props = defineProps<{
 
 <template>
   <div
-    :class="`${hoverAnimation} rounded relative min-w-[300px;] overflow-hidden min-h-[200px;] max-w-[100%] duration-100 animation-all delay-100 shadow hover:shadow-xl text-lg hover:text-2xl m-4`"
+    :class="` lg:min-w-[400px] md:min-w-[300px] min-w-[200px]
+    ${hoverAnimation} rounded relative overflow-hidden duration-100 animation-all delay-100 shadow hover:shadow-xl text-lg hover:text-2xl m-4`"
   >
     <img
-      class="h-full lg:brightness-50 hover:brightness-100 duration-100 animation-all delay-100 "
+      class="h-full w-full lg:brightness-50 hover:brightness-100 duration-100 animation-all delay-100 "
       :src="props.project.img"
     >
     <div class="flex items-center justify-end px-4 py-2 absolute duration-100 animation-all delay-100 bottom-0 left-0 w-full dark:bg-gray-950 bg-gray-300 font-light ">
