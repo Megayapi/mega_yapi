@@ -1,4 +1,6 @@
 <script setup>
+import Other1 from '../../assets/projects/other/1.jpg'
+import Other2 from '../../assets/projects/other/2.jpg'
 import Ayna from '../assets/projects/ayna/1.jpg'
 import Bakim from '../assets/projects/bakim/1.jpg'
 import Cambalkon from '../assets/projects/cambalkon/1.jpg'
@@ -9,6 +11,8 @@ import Pvc from '../assets/projects/pvc/1.jpg'
 import Yenileme from '../assets/projects/yenileme/1.jpg'
 
 const items = [
+  Other2,
+  Other1,
   Ayna,
   Bakim,
   Cambalkon,
