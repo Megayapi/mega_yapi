@@ -19,7 +19,7 @@ const projects = [
   { label: 'PVC', img: Pvc, to: 'pvc' },
   { label: 'Duşakabin', img: Dusakabin, to: 'dusakabin' },
   { label: 'Plise Perde ve Sineklik', img: Plise, to: 'plise' },
-  { label: 'Alüminyum Korkuluk', img: Korkuluk, to: 'korkuluk' },
+  { label: 'Korkuluk', img: Korkuluk, to: 'korkuluk' },
 ]
 </script>
 
