@@ -69,8 +69,9 @@ const defaultLinks = [{
         }"
       >
         <template #header>
-          <div class="flex w-full justify-between items-center">
-            <label class="text-4xl font-light "> MEGA YAPI </label>
+          <div class="flex w-full h-12 justify-between items-center">
+            <!-- <label class="text-4xl font-light "> MEGA YAPI </label> -->
+            <img class="h-full" src="../assets/icon.png">
             <UButton
               size="sm" variant="soft" icon="material-symbols:keyboard-double-arrow-right" square padded
               @click="isOpen = false"
@@ -79,6 +80,14 @@ const defaultLinks = [{
         </template>
 
         <UVerticalNavigation :links="defaultLinks" />
+
+        <template #footer>
+          <a href="https://github.com/atlasyigitaydin" target="_blank" class="opacity-70 flex gap-1 justify-start items-center">
+            <UIcon name="mdi:github" class="text-xl" />
+            Made by
+            <div class="underline"> atlasyigitaydin </div>
+          </a>
+        </template>
       </UCard>
     </USlideover>
   </div>

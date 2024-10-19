@@ -53,6 +53,11 @@ useHead({
       <NuxtPage />
     </NuxtLayout>
   </Transition>
+  <a href="https://github.com/atlasyigitaydin" target="_blank" class="fixed bottom-0 lg:visible lg:flex md:hidden hidden left-0 opacity-70 gap-1 justify-start items-center">
+    <UIcon name="mdi:github" class="text-xl" />
+    Made by
+    <div class="underline"> atlasyigitaydin </div>
+  </a>
 </template>
 
 <style lang="css">
