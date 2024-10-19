@@ -70,8 +70,8 @@ onMounted(() => {
   <div class="flex w-full h-full font-light lg:justify-around justify-between flex-col overflow-auto relative">
     <div class="w-full flex flex-col lg:flex-row justify-between items-center">
       <Galeria />
-      <div class="w-full p-2 h-full py-4 flex flex-col">
-        <div class="lg:text-6xl text-2xl lg:text-left text-right justify-end flex gap-8">
+      <div class="w-full p-2 h-full gap-6 py-4 flex flex-col">
+        <div class="lg:text-6xl text-3xl lg:text-left text-right justify-end flex gap-8">
           <div class="flex flex-col justify-start">
             <label class="text-primary-400"> {{ `+${year}` }} </label>
             <label class="lg:text-xl text-sm"> yıldan fazla <label class="text-green-500 dark:text-green-400"> tecrübe </label> </label>
