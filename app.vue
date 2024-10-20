@@ -1,9 +1,9 @@
 <script setup lang="ts">
-const appConfig = useAppConfig()
-onMounted(() => {
-  appConfig.ui.primary = 'sky'
-  appConfig.ui.strategy = 'stone'
-})
+// const appConfig = useAppConfig()
+// onMounted(() => {
+//   appConfig.ui.primary = 'sky'
+//   appConfig.ui.strategy = 'stone'
+// })
 
 useHead({
   title: 'MEGA YAPI',
