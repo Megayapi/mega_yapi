@@ -67,7 +67,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex flex-col gap-2 font-light">
+  <div class="gap-8 font-light">
     <div class="w-full flex flex-col lg:flex-row justify-between items-center">
       <Galeria />
       <div class="w-full p-2 h-full gap-6 py-4 flex flex-col">
@@ -109,6 +109,7 @@ onMounted(() => {
         </div>
       </div>
     </div>
+    <div class="lg:min-h-[28px] md:min-h-[18px]" />
     <div
       class="w-full flex overflow-x-auto gap-4"
       @mouseover="isHovered = true" @mouseleave="isHovered = false"
