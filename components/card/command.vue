@@ -4,7 +4,7 @@ const props = defineProps<{
     color: string
     name: string
     command: string
-    platform: 'Google' | 'Rl' | string
+    platform: string
   }
 }>()
 </script>
