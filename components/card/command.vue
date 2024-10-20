@@ -11,9 +11,9 @@ const props = defineProps<{
 
 <template>
   <div
-    class="flex lg:p-4 md:p-2 p-2 relative
-    w-[500px] min-w-[400px]
-    h-[150px] items-center
+    class="flex items-center lg:p-4 md:p-2 p-2 relative
+    min-w-[280px] w-[400px] min-h-[100px]
+    h-[150px]
     dark:bg-gray-950 bg-gray-300 rounded"
   >
     <UIcon :name="props.command.platform === 'Google' ? 'logos:google-play-icon' : ''" class="absolute top-2 left-2 text-2xl" />

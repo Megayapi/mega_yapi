@@ -67,7 +67,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="flex w-full h-full font-light lg:justify-around justify-between flex-col overflow-auto relative">
+  <div class="flex flex-col gap-2 font-light">
     <div class="w-full flex flex-col lg:flex-row justify-between items-center">
       <Galeria />
       <div class="w-full p-2 h-full gap-6 py-4 flex flex-col">
