@@ -8,7 +8,7 @@
       <div class="lg:w-6/12 md:w-6/12 w-11/12 flex items-center">
         <slot />
       </div>
-      <div class="w-full h-full text-left flex flex-col gap-6 lg:p-12 md:p-6 sm:p-3">
+      <div class="w-full h-full text-left flex flex-col gap-6 lg:p-12 md:p-6 p-3">
         <slot name="text" />
       </div>
     </div>
