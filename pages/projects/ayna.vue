@@ -4,11 +4,12 @@ import ayna2 from '../../assets/projects/ayna/2.jpg'
 import ayna3 from '../../assets/projects/ayna/3.jpg'
 import ayna4 from '../../assets/projects/ayna/4.jpg'
 import ayna5 from '../../assets/projects/ayna/5.jpg'
+import ayna6 from '../../assets/projects/ayna/6.jpg'
 
 definePageMeta({
   name: 'ayna',
 })
-const items = [ayna1, ayna2, ayna3, ayna4, ayna5]
+const items = [ayna1, ayna2, ayna3, ayna4, ayna5,ayna6]
 </script>
 
 <template>

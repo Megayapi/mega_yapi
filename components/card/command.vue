@@ -35,7 +35,16 @@ const props = defineProps<{
           <UIcon v-for="i in 5" :key="i" name="material-symbols:star" />
         </div>
       </div>
-      <label class="overflow-y-auto p-2 font-normal"> {{ props.command.command }} </label>
+      <label
+        class="overflow-y-auto p-2 font-normal
+        [&::-webkit-scrollbar]:w-2
+  [&::-webkit-scrollbar-track]:rounded-full
+  [&::-webkit-scrollbar-track]:bg-gray-100
+  [&::-webkit-scrollbar-thumb]:rounded-full
+  [&::-webkit-scrollbar-thumb]:bg-gray-300
+  dark:[&::-webkit-scrollbar-track]:bg-blue-400/25
+  dark:[&::-webkit-scrollbar-thumb]:bg-blue-400"
+      > {{ props.command.command }} </label>
     </div>
   </div>
 </template>
