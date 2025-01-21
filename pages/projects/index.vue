@@ -25,7 +25,7 @@ const projects = [
 
 <template>
   <div
-    class="flex overflow-y-auto  [&::-webkit-scrollbar]:w-2
+    class="flex overflow-y-auto  [&::-webkit-scrollbar]:w-[1.5px]
   [&::-webkit-scrollbar-track]:rounded-full
   [&::-webkit-scrollbar-track]:bg-gray-100
   [&::-webkit-scrollbar-thumb]:rounded-full

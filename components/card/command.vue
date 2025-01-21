@@ -37,7 +37,7 @@ const props = defineProps<{
       </div>
       <label
         class="overflow-y-auto p-2 font-normal
-        [&::-webkit-scrollbar]:w-2
+        [&::-webkit-scrollbar]:w-[1.5px]
   [&::-webkit-scrollbar-track]:rounded-full
   [&::-webkit-scrollbar-track]:bg-gray-100
   [&::-webkit-scrollbar-thumb]:rounded-full

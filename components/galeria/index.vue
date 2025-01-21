@@ -40,7 +40,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }" class="rounded-lg overflow-hidden h-full max-w-96" arrows>
+  <UCarousel v-slot="{ item }" :items="items" :ui="{ item: 'basis-full' }" class="rounded-lg overflow-hidden h-full lg:max-w-[384px] md:max-w-[384px] h-5/6" arrows>
     <img :src="item" class="h-full" draggable="false">
   </UCarousel>
 </template>

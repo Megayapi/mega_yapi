@@ -48,7 +48,7 @@ const commands = [
 
 <template>
   <div
-    class="w-full flex overflow-x-auto gap-4 [&::-webkit-scrollbar]:h-2 p-2
+    class="w-full flex overflow-x-auto gap-4 [&::-webkit-scrollbar]:h-[4px] p-2
             [&::-webkit-scrollbar-track]:rounded-full
             [&::-webkit-scrollbar-track]:bg-gray-100
             [&::-webkit-scrollbar-thumb]:rounded-full

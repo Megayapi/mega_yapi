@@ -28,6 +28,7 @@ const defaultLinks = [{
 }, {
   class: 'flex items-center',
   icon: 'wi:moon-alt-waning-gibbous-6',
+  label: 'Temayı Değiştir',
   click: () => toggleColorMode(),
 }]
 </script>

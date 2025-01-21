@@ -6,7 +6,7 @@ definePageMeta({
 
 <template>
   <div class="w-full h-full flex flex-col justify-between lg:overflow-hidden overflow-y-auto">
-    <div class="flex lg:flex-row flex-col">
+    <div class="flex lg:flex-row flex-col items-center">
       <Galeria />
       <HomeAbout />
     </div>
