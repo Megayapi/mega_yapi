@@ -3,7 +3,7 @@ const banner = ref<boolean>(false)
 </script>
 
 <template>
-  <div :class="`absolute top-4 ${banner ? '-left-[310px]' : 'left-0'} sm:hidden animation-all duration-300 delay-100`">
+  <div :class="`absolute mt-16 ${banner ? '-left-[310px]' : 'left-0'} sm:hidden animation-all duration-300 delay-100`">
     <div
       :class="`flex gap-2 h-12 text-gray-950 rounded-r-xl ${banner ? 'bg-green-400' : 'bg-primary-400'} cursor-pointer flex justify-center items-center p-1`"
       @click="banner = !banner"
