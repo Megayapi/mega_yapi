@@ -31,7 +31,7 @@ const props = defineProps<{
     <div class="h-full flex flex-col m-2 justify-between gap-2">
       <div class="flex w-full justify-between border-b dark:border-gray-700 border-gray-300 px-2">
         <label class="font-normal"> {{ props.command.name }} </label>
-        <div class="dark:text-yellow-400 text-yellow-500">
+        <div class="dark:text-yellow-400 text-yellow-500 flex items-center flex-row">
           <UIcon v-for="i in 5" :key="i" name="material-symbols:star" />
         </div>
       </div>
