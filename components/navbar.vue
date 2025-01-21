@@ -36,7 +36,7 @@ const defaultLinks = [{
 <template>
   <div class="w-full flex justify-between h-12 md:h-18 items-center shadow-xl">
     <div class="w-96 px-8 flex items-center">
-      <label class="md:text-4xl text-3xl font-light whitespace-nowrap"> MEGA YAPI </label>
+      <label class="md:text-4xl text-3xl font-bold whitespace-nowrap"> MEGA YAPI </label>
     </div>
     <a
       href="https://www.instagram.com/mega_yapibursa" target="_blank"
@@ -80,7 +80,42 @@ const defaultLinks = [{
           </div>
         </template>
 
-        <UVerticalNavigation :links="defaultLinks" />
+        <UVerticalNavigation
+          :links="defaultLinks"
+          :ui="{
+            wrapper: 'relative',
+            base: 'group relative flex items-center gap-1.5 focus:outline-none focus-visible:outline-none dark:focus-visible:outline-none focus-visible:before:ring-inset focus-visible:before:ring-1 focus-visible:before:ring-primary-500 dark:focus-visible:before:ring-primary-400 before:absolute before:inset-px before:rounded-md disabled:cursor-not-allowed disabled:opacity-75',
+            ring: 'focus-visible:ring-inset focus-visible:ring-2 focus-visible:ring-primary-500 dark:focus-visible:ring-primary-400',
+            padding: 'px-2.5 py-1.5',
+            width: 'w-full',
+            rounded: 'rounded-md',
+            font: 'font-medium',
+            size: 'text-sm',
+            active: 'text-gray-900 dark:text-white before:bg-gray-100 dark:before:bg-gray-800',
+            inactive: 'text-gray-500 dark:text-gray-400 hover:text-gray-900 dark:hover:text-white hover:before:bg-gray-50 dark:hover:before:bg-gray-800/50',
+            label: 'truncate relative',
+            icon: {
+              base: 'flex-shrink-0 w-5 h-5 relative',
+              active: 'text-gray-700 dark:text-gray-200',
+              inactive: 'text-gray-400 dark:text-gray-500 group-hover:text-gray-700 dark:group-hover:text-gray-200',
+            },
+            avatar: {
+              base: 'flex-shrink-0',
+              size: '2xs',
+            },
+            badge: {
+              base: 'flex-shrink-0 ms-auto relative rounded',
+              color: 'gray',
+              variant: 'solid',
+              size: 'xs',
+            },
+            divider: {
+              wrapper: {
+                base: 'p-2',
+              },
+            },
+          }"
+        />
 
         <template #footer>
           <a href="https://github.com/atlasyigitaydin" target="_blank" class="opacity-70 flex gap-1 justify-start items-center">
