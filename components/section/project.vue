@@ -63,6 +63,7 @@ const opacity = randomBetween(0.15, 0.4).toFixed(2)
         <img
           v-for="(img, key) in props.project.images"
           :key="key"
+          loading="lazy"
           class="lg:max-h-128 max-h-86 rounded-xl z-999 shadow"
           :src="img"
           alt=""
