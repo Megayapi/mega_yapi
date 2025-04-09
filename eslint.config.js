@@ -3,10 +3,8 @@ import antfu from '@antfu/eslint-config'
 export default antfu({
   rules: {
     'no-undef': 'off',
-    'cannot-find-module': 'off',
+    'vue/custom-event-name-casing': 'off',
   },
-
-  typescript: true,
   vue: true,
-
+  typescript: true,
 })

@@ -1,29 +1,17 @@
 <script setup lang="ts">
 definePageMeta({
   name: 'home',
+  path: '/',
 })
+
+const projectStore = useProjectStore()
 </script>
 
 <template>
-  <div class="w-full h-full flex flex-col justify-between lg:overflow-hidden overflow-y-auto">
-    <div class="flex lg:flex-row flex-col items-center">
-      <Galeria />
-      <HomeAbout />
-    </div>
-    <HomeCommands class="min-h-[180px]" />
-  </div>
+  <NuxtLayout>
+    <SectionHome class="mb-12" />
+    <SectionProject v-for="project in projectStore.projects" :key="project.key" :project class="lg:my-10 my-4" />
+    <SectionComments />
+    <SectionContact />
+  </NuxtLayout>
 </template>
-
-<style scoped>
-@keyframes scrollX {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-.auto-scroll {
-  animation: scrollX 20s  alternate;
-}
-</style>

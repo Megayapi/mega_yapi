@@ -1,12 +1,18 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
-  app: {
-    pageTransition: {
-      name: 'page',
-      mode: 'out-in',
-    },
+  compatibilityDate: '2024-11-01',
+  devtools: { enabled: true },
+  modules: [
+    '@nuxt/image',
+    '@nuxt/fonts',
+    '@nuxt/icon',
+    '@pinia/nuxt',
+  ],
+  vite: {
+    plugins: [
+      tailwindcss(),
+    ],
   },
-  compatibilityDate: '2024-04-03',
-  devtools: { enabled: false },
-  modules: ['@nuxt/ui', '@nuxt/icon'],
+  css: ['~/assets/css/main.css'],
 })
