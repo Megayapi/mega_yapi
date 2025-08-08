@@ -14,6 +14,7 @@ import {
 const app = useApp()
 const projectStore = useProjectStore()
 const mobileMenuOpen = ref(false)
+const isHome = computed(() => useRoute().name === 'home')
 
 const pageIsDown = computed(() => !!(app.scrollY > 100))
 
@@ -32,7 +33,7 @@ function closeMenu() {
     <nav class="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8" aria-label="Global">
       <!-- Logo -->
       <div class="flex lg:flex-1">
-        <a href="#home" class="-m-1.5 p-1.5">
+        <button class="-m-1.5 p-1.5" @click="() => navigateToSection('home')">
           <span class="sr-only">Your Company</span>
           <img
             :class="{ 'h-12': pageIsDown, 'h-16': !pageIsDown }"
@@ -40,7 +41,7 @@ function closeMenu() {
             src="/logo.png"
             alt="Logo"
           >
-        </a>
+        </button>
       </div>
 
       <!-- Mobil Menü Butonu -->
@@ -79,10 +80,23 @@ function closeMenu() {
                   class="group relative flex items-center gap-x-4 rounded-lg p-4 text-sm hover:bg-gray-50"
                 >
                   <div class="flex-auto" @click="mobileMenuOpen = false">
-                    <a :href="item.href" class="block font-semibold">
+                    <button
+                      class="block font-semibold" @click="() => {
+                        if (isHome)
+                          navigateToSection(item.key)
+                        else
+                          navigateTo({
+                            name: 'project',
+                            params: {
+                              id: item.key,
+                            },
+                          })
+
+                      }"
+                    >
                       {{ item.name }}
                       <span class="absolute inset-0" />
-                    </a>
+                    </button>
                     <p class="mt-1 text-gray-600">
                       {{ item.description }}
                     </p>
@@ -93,8 +107,12 @@ function closeMenu() {
           </transition>
         </Popover>
 
-        <a href="#comments" class="text-sm font-semibold">Müşteri Yorumları</a>
-        <a href="#contact" class="text-sm font-semibold">Bize Ulaşın</a>
+        <button class="text-sm font-semibold" @click="() => navigateToSection('comments')">
+          Müşteri Yorumları
+        </button>
+        <button class="text-sm font-semibold" @click="() => navigateToSection('contact')">
+          Bize Ulaşın
+        </button>
       </PopoverGroup>
 
       <!-- Ara Butonu -->
@@ -133,24 +151,45 @@ function closeMenu() {
                   <Icon name="heroicons:chevron-down" class="size-5" :class="{ 'rotate-180': open }" />
                 </DisclosureButton>
                 <DisclosurePanel class="mt-2 space-y-1">
-                  <a
+                  <button
                     v-for="item in projectStore.projects"
                     :key="item.name"
-                    :href="item.href"
                     class="block py-2 pr-3 pl-6 text-sm border-b border-gray-300"
-                    @click="closeMenu"
+                    @click="() => {
+                      if (isHome)
+                        navigateToSection(item.key)
+                      else
+                        navigateTo({
+                          name: 'project',
+                          params: {
+                            id: item.key,
+                          },
+                        })
+
+                      closeMenu()
+                    }"
                   >
                     {{ item.name }}
-                  </a>
+                  </button>
                 </DisclosurePanel>
               </Disclosure>
 
-              <a href="#comments" class="block text-sm  font-semibold hover:bg-gray-50 rounded-lg py-2" @click="closeMenu">
+              <button
+                class="block text-sm  font-semibold hover:bg-gray-50 rounded-lg py-2" @click="() => {
+                  closeMenu()
+                  navigateToSection('comments')
+                }"
+              >
                 Müşteri Yorumları
-              </a>
-              <a href="#contact" class="block text-sm font-semibold hover:bg-gray-50 rounded-lg py-2" @click="closeMenu">
+              </button>
+              <button
+                class="block text-sm font-semibold hover:bg-gray-50 rounded-lg py-2" @click="() => {
+                  closeMenu()
+                  navigateToSection('contact')
+                }"
+              >
                 Bize Ulaşın
-              </a>
+              </button>
             </div>
 
             <div class="py-6 flex items-center gap-2">

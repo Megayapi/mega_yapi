@@ -5,6 +5,19 @@ definePageMeta({
 })
 
 const projectStore = useProjectStore()
+
+onMounted(() => {
+  const targetId = sessionStorage.getItem('scrollToSection')
+  if (targetId) {
+    sessionStorage.removeItem('scrollToSection')
+    const el = document.getElementById(targetId)
+    if (el) {
+      setTimeout(() => {
+        el.scrollIntoView({ behavior: 'smooth' })
+      }, 300)
+    }
+  }
+})
 </script>
 
 <template>
