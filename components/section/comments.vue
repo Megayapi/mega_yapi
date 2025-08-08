@@ -56,7 +56,6 @@ const comments: Comment[] = [
         Müşteri Yorumları
       </h2>
 
-      <!-- Scrollable container (mobile) -->
       <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
         <div
           v-for="(comment, i) in comments"

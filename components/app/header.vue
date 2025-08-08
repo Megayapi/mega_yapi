@@ -15,10 +15,8 @@ const app = useApp()
 const projectStore = useProjectStore()
 const mobileMenuOpen = ref(false)
 
-// Sayfa scroll olunca header'a blur ver
 const pageIsDown = computed(() => !!(app.scrollY > 100))
 
-// Menü tıklanınca kapansın
 function closeMenu() {
   mobileMenuOpen.value = false
 }

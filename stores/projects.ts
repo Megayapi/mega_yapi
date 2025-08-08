@@ -86,7 +86,12 @@ export const useProjectStore = defineStore('projects', () => {
     })
   })
 
+  const getProjectByKey = (key: string) => {
+    return projects.value.find(project => project.key === key)
+  }
+
   return {
     projects,
+    getProjectByKey,
   }
 })
