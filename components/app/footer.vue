@@ -18,10 +18,26 @@
           Bağlantılar
         </h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="#home" class="hover:text-white transition">Anasayfa</a></li>
-          <li><a href="#comments" class="hover:text-white transition">Müşteri Yorumları</a></li>
-          <li><a href="#contact" class="hover:text-white transition">İletişim</a></li>
-          <li><a :href="useProjectStore().projects[0].href" class="hover:text-white transition">Hizmetlerimiz</a></li>
+          <li>
+            <button class="hover:text-white transition" @click="navigateToSection('home')">
+              Anasayfa
+            </button>
+          </li>
+          <li>
+            <button class="hover:text-white transition" @click="navigateToSection('comments')">
+              Müşteri Yorumları
+            </button>
+          </li>
+          <li>
+            <button class="hover:text-white transition" @click="navigateToSection('contact')">
+              İletişim
+            </button>
+          </li>
+          <li>
+            <button class="hover:text-white transition" @click="navigateToSection(useProjectStore().projects[0].href.replace('#', ''))">
+              Hizmetlerimiz
+            </button>
+          </li>
         </ul>
       </div>
 
@@ -39,13 +55,12 @@
       </div>
     </div>
 
-    <!-- Alt Çizgi -->
     <div class="mt-12 border-t border-white/10 pt-6 text-center text-xs text-gray-500">
       <p>&copy; {{ new Date().getFullYear() }} Mega Yapı. Tüm hakları saklıdır.</p>
       <p class="mt-1">
-        Made with ❤️ by
+        Made by
         <a
-          href="https://github.com/atlaxt"
+          href="https://atlaxt.me"
           target="_blank"
           rel="noopener"
           class="text-white hover:underline font-semibold"
