@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import type { Project } from '~/types'
-
 definePageMeta({
   name: 'project',
 })

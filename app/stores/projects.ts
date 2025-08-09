@@ -1,4 +1,3 @@
-import type { Project } from '~/types'
 import Ayna1 from '../assets/projects/ayna/1.jpg'
 import Ayna2 from '../assets/projects/ayna/2.jpg'
 import Ayna3 from '../assets/projects/ayna/3.jpg'
