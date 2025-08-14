@@ -117,7 +117,7 @@ function closeMenu() {
 
       <!-- Ara Butonu -->
       <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="tel:05449606980" class="text-sm font-semibold text-green-700 flex items-center gap-1">
+        <a href="tel:+905449606980" class="text-sm font-semibold text-green-700 flex items-center gap-1">
           Hemen Ara <Icon name="heroicons:phone" class="text-xl" />
         </a>
       </div>

@@ -1,3 +1,7 @@
+<script setup lang="ts">
+const firstProject = useProjectStore().projects[0]
+</script>
+
 <template>
   <footer class="bg-[#0d1126] text-gray-300 pt-16 pb-8 px-6">
     <div class="max-w-7xl mx-auto grid gap-12 md:grid-cols-3">
@@ -8,7 +12,9 @@
         </h3>
         <p class="text-sm leading-relaxed opacity-80">
           <!-- Buraya firma hakkında kısa bir açıklama yazabilirsin -->
-          Mega Yapı olarak cam balkon, PVC doğrama ve ayna uygulamalarıyla yaşam alanlarınıza estetik ve fonksiyonellik katıyoruz. Yüksek işçilik kalitesi ve müşteri memnuniyetini ön planda tutarak güvenilir, hızlı ve profesyonel hizmet sunuyoruz
+          Mega Yapı olarak cam balkon, PVC doğrama ve ayna uygulamalarıyla yaşam alanlarınıza estetik ve fonksiyonellik
+          katıyoruz. Yüksek işçilik kalitesi ve müşteri memnuniyetini ön planda tutarak güvenilir, hızlı ve profesyonel
+          hizmet sunuyoruz
         </p>
       </div>
 
@@ -34,7 +40,10 @@
             </button>
           </li>
           <li>
-            <button class="hover:text-white transition" @click="navigateToSection(useProjectStore().projects[0].href.replace('#', ''))">
+            <button
+              v-if="firstProject" class="hover:text-white transition"
+              @click="navigateToSection(firstProject.href.replace('#', ''))"
+            >
               Hizmetlerimiz
             </button>
           </li>
@@ -50,7 +59,7 @@
           <li>📞 0 544 960 69 80</li>
           <li>📞 0 536 823 30 70</li>
           <li>📍 Bursa / Yıldırım</li>
-          <li>✉️ info@megayapi.com</li>
+          <li>✉️ yapimegabursa@gmail.com</li>
         </ul>
       </div>
     </div>
@@ -59,12 +68,7 @@
       <p>&copy; {{ new Date().getFullYear() }} Mega Yapı. Tüm hakları saklıdır.</p>
       <p class="mt-1">
         Made by
-        <a
-          href="https://atlaxt.me"
-          target="_blank"
-          rel="noopener"
-          class="text-white hover:underline font-semibold"
-        >
+        <a href="https://atlaxt.me" target="_blank" rel="noopener" class="text-white hover:underline font-semibold">
           @atlaxt
         </a>
       </p>
