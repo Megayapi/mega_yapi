@@ -5,5 +5,6 @@ declare global {
     images: string[]
     key: string
     href: string
+    getContent: () => Promise<any>
   }
 }

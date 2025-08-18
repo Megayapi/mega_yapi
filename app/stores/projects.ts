@@ -81,6 +81,13 @@ export const useProjectStore = defineStore('projects', () => {
         ...project,
         href: `#${_normalize(project.name)}`,
         key: _normalize(project.name),
+        getContent: async () => {
+          const { data } = await useAsyncData(
+            // `content/${_normalize(project.name)}`,
+            () => queryCollection('content').path(`/${_normalize(project.name)}`).first(),
+          )
+          return data
+        },
       }
     })
   })

@@ -44,18 +44,26 @@ function handleKeydown(event: KeyboardEvent) {
     closeModal()
 }
 
-onMounted(() => {
-  window.addEventListener('keydown', handleKeydown)
+const { data: projectContent } = await useAsyncData(() => queryCollection('content').path('/pvc').first())
+
+onMounted(async () => {
   const project_key = route.params.id as string
   if (!project_key) {
     navigateTo({ name: 'home' })
     return
   }
+
   currentProject.value = projectStore.getProjectByKey(project_key)
+  if (!currentProject.value) {
+    navigateTo({ name: 'home' })
+  }
 })
 
 onBeforeUnmount(() => {
   window.removeEventListener('keydown', handleKeydown)
+})
+onMounted(() => {
+  window.addEventListener('keydown', handleKeydown)
 })
 </script>
 
@@ -68,6 +76,10 @@ onBeforeUnmount(() => {
       <p class="mt-4 text-gray-600 max-w-2xl">
         {{ currentProject.description }}
       </p>
+      <ContentRenderer v-if="projectContent" :value="projectContent" />
+      <div v-else>
+        project content not found
+      </div>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

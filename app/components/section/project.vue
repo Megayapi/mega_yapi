@@ -97,7 +97,7 @@ onBeforeUnmount(() => {
         >
           {{ props.project.description }}
         </p>
-        <button
+        <!-- <button
           class="mt-4 text-sm underline cursor-pointer"
           @click="() => {
             navigateTo({
@@ -109,7 +109,7 @@ onBeforeUnmount(() => {
           }"
         >
           {{ "Detayları Gör" }}
-        </button>
+        </button> -->
       </div>
 
       <div class="flex lg:flex-wrap flex-row gap-6 overflow-x-auto pb-3">
