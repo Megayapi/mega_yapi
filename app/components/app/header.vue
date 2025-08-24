@@ -1,204 +1,117 @@
 <script setup lang="ts">
-import {
-  Dialog,
-  DialogPanel,
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-  Popover,
-  PopoverButton,
-  PopoverGroup,
-  PopoverPanel,
-} from '@headlessui/vue'
+import { ref } from 'vue'
 
-const app = useApp()
-const projectStore = useProjectStore()
-const mobileMenuOpen = ref(false)
-const isHome = computed(() => useRoute().name === 'home')
+const navItems = [
+  { text: 'Hizmetlerimiz', href: 'projects' },
+  { text: 'Müşteri Yorumları', href: 'comments' },
+  { text: 'İletişim', href: 'contact' },
+]
 
-const pageIsDown = computed(() => !!(app.scrollY > 100))
+const isOpen = ref(false)
 
-function closeMenu() {
-  mobileMenuOpen.value = false
+const { data: home } = await useAsyncData('about', () =>
+  queryCollection('about').first())
+
+const tel = computed(() => home.value?.phones[0]
+  ? `tel:+9${home.value?.phones[0].split(' ').join('')}`
+  : '',
+)
+
+async function navigateToSection(targetId: string) {
+  const route = useRoute()
+  const router = useRouter()
+
+  if (route.name !== 'home') {
+    sessionStorage.setItem('scrollToSection', targetId)
+
+    await router.push({ name: 'home' })
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  }
+  else {
+    scrollToSection(targetId)
+  }
+}
+
+function scrollToSection(id: string) {
+  const el = document.querySelector(`#${id}`)
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' })
+  }
 }
 </script>
 
 <template>
-  <header
-    class="z-999999 duration-300 animation-all"
-    :class="{
-      'bg-clip-padding shadow-lg backdrop-filter backdrop-blur-md bg-gray-100/75': pageIsDown,
-    }"
-  >
-    <nav class="mx-auto flex max-w-7xl items-center justify-between p-2 lg:px-8" aria-label="Global">
-      <!-- Logo -->
-      <div class="flex lg:flex-1">
-        <button class="-m-1.5 p-1.5" @click="() => navigateToSection('home')">
-          <span class="sr-only">Your Company</span>
-          <img
-            :class="{ 'h-12': pageIsDown, 'h-16': !pageIsDown }"
-            class="w-auto duration-300"
-            src="/logo.png"
-            alt="Logo"
-          >
-        </button>
-      </div>
-
-      <!-- Mobil Menü Butonu -->
-      <div class="flex lg:hidden">
-        <button
-          type="button"
-          class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
-          @click="mobileMenuOpen = true"
-        >
-          <span class="sr-only">Open main menu</span>
-          <Icon name="heroicons:bars-3" class="size-6" aria-hidden="true" />
-        </button>
-      </div>
-
-      <!-- Büyük Ekran Menü -->
-      <PopoverGroup class="hidden lg:flex lg:gap-x-12">
-        <Popover class="relative">
-          <PopoverButton class="flex items-center gap-x-1 text-sm font-semibold">
-            Hizmetlerimiz
-            <Icon name="heroicons:chevron-down" class="size-5 text-gray-400" />
-          </PopoverButton>
-
-          <transition
-            enter-active-class="transition ease-out duration-300"
-            enter-from-class="opacity-0 translate-y-1"
-            enter-to-class="opacity-100 translate-y-0"
-            leave-active-class="transition ease-in duration-150"
-            leave-from-class="opacity-100 translate-y-0"
-            leave-to-class="opacity-0 translate-y-1"
-          >
-            <PopoverPanel class="absolute top-full -left-8 z-10 mt-3 w-screen max-w-md rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5">
-              <div class="p-4">
-                <div
-                  v-for="item in projectStore.projects"
-                  :key="item.name"
-                  class="group relative flex items-center gap-x-4 rounded-lg p-4 text-sm hover:bg-gray-50"
-                >
-                  <div class="flex-auto" @click="mobileMenuOpen = false">
-                    <button
-                      class="block font-semibold" @click="() => {
-                        if (isHome)
-                          navigateToSection(item.key)
-                        else
-                          navigateTo({
-                            name: 'project',
-                            params: {
-                              id: item.key,
-                            },
-                          })
-
-                      }"
-                    >
-                      {{ item.name }}
-                      <span class="absolute inset-0" />
-                    </button>
-                    <p class="mt-1 text-gray-600">
-                      {{ item.description }}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </PopoverPanel>
-          </transition>
-        </Popover>
-
-        <button class="text-sm font-semibold" @click="() => navigateToSection('comments')">
-          Müşteri Yorumları
-        </button>
-        <button class="text-sm font-semibold" @click="() => navigateToSection('contact')">
-          Bize Ulaşın
-        </button>
-      </PopoverGroup>
-
-      <!-- Ara Butonu -->
-      <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-        <a href="tel:+905449606980" class="text-sm font-semibold text-green-700 flex items-center gap-1">
-          Hemen Ara <Icon name="heroicons:phone" class="text-xl" />
+  <header class="bg-white/50 shadow w-full sticky backdrop-blur-xs top-0 z-50">
+    <div class="items-center flex justify-between max-w-7xl mx-auto py-4 px-2">
+      <div class="flex-1">
+        <a @click="navigateToSection('home')">
+          <img class="h-12 sm:h-16" src="../../assets/logo.png">
         </a>
       </div>
-    </nav>
 
-    <!-- Mobil Menü -->
-    <Dialog class="lg:hidden" :open="mobileMenuOpen" @close="closeMenu">
-      <div class="fixed inset-0 z-10" />
-      <DialogPanel class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
-        <div class="flex items-center justify-between">
-          <a href="#home" class="-m-1.5 p-1.5" @click="closeMenu">
-            <span class="sr-only">Your Company</span>
-            <!-- <img class="h-10 w-auto" src="/logo.png" alt="Logo"> -->
-          </a>
-          <button
-            type="button"
-            class="-m-2.5 rounded-md p-2.5 text-gray-700"
-            @click="closeMenu"
-          >
-            <span class="sr-only">Close menu</span>
-            <Icon name="heroicons:x-mark" class="size-6" />
-          </button>
-        </div>
+      <nav class="hidden lg:flex flex-1 flex-row gap-12 justify-center">
+        <a
+          v-for="item in navItems"
+          :key="item.text"
+          class="font-bold duration-300 hover:scale-110 whitespace-nowrap cursor-pointer"
+          @click="navigateToSection(item.href)"
+        >
+          {{ item.text }}
+        </a>
+      </nav>
 
-        <div class="mt-6 flow-root">
-          <div class="-my-6 divide-y divide-gray-200">
-            <div class="space-y-4 py-6">
-              <Disclosure v-slot="{ open }" as="div" class="-mx-3">
-                <DisclosureButton class="flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-base font-semibold hover:bg-gray-50">
-                  Hizmetlerimiz
-                  <Icon name="heroicons:chevron-down" class="size-5" :class="{ 'rotate-180': open }" />
-                </DisclosureButton>
-                <DisclosurePanel class="mt-2 space-y-1">
-                  <button
-                    v-for="item in projectStore.projects"
-                    :key="item.name"
-                    class="block py-2 pr-3 pl-6 text-sm border-b border-gray-300"
-                    @click="() => {
-                      if (isHome)
-                        navigateToSection(item.key)
-                      else
-                        navigateTo({
-                          name: 'project',
-                          params: {
-                            id: item.key,
-                          },
-                        })
+      <div class="hidden lg:flex flex-1 justify-end">
+        <a
+          :href="tel"
+          class="text-sm font-semibold flex items-center gap-2 bg-green-500 hover:bg-green-600 duration-300 hover:scale-110 py-2 px-3 rounded-3xl text-white"
+        >
+          <span>Hemen Ara</span>
+          <Icon name="heroicons:phone" class="text-xl" />
+        </a>
+      </div>
 
-                      closeMenu()
-                    }"
-                  >
-                    {{ item.name }}
-                  </button>
-                </DisclosurePanel>
-              </Disclosure>
+      <button
+        class="lg:hidden text-2xl px-2 mt-2"
+        @click="isOpen = !isOpen"
+      >
+        <Icon :name="isOpen ? 'heroicons:x-mark' : 'heroicons:bars-3'" />
+      </button>
+    </div>
 
-              <button
-                class="block text-sm  font-semibold hover:bg-gray-50 rounded-lg py-2" @click="() => {
-                  closeMenu()
-                  navigateToSection('comments')
-                }"
-              >
-                Müşteri Yorumları
-              </button>
-              <button
-                class="block text-sm font-semibold hover:bg-gray-50 rounded-lg py-2" @click="() => {
-                  closeMenu()
-                  navigateToSection('contact')
-                }"
-              >
-                Bize Ulaşın
-              </button>
-            </div>
+    <transition name="fade">
+      <div
+        v-if="isOpen"
+        class="lg:hidden flex flex-col items-center gap-6 py-6 bg-white/50 shadow-md"
+      >
+        <a
+          v-for="item in navItems"
+          :key="item.text"
+          class="font-semibold text-lg"
+          @click="navigateToSection(item.href), isOpen = false"
+        >
+          {{ item.text }}
+        </a>
 
-            <div class="py-6 flex items-center gap-2">
-              <Icon name="heroicons:phone" class="text-xl" />
-              <a href="tel:05449606980" class="text-base font-semibold">Hemen Ara</a>
-            </div>
-          </div>
-        </div>
-      </DialogPanel>
-    </Dialog>
+        <a
+          :href="tel"
+          class="text-lg font-semibold flex items-center gap-2 bg-green-500 hover:bg-green-600 mt-6 py-2 px-4 rounded-3xl text-white"
+          @click="isOpen = false"
+        >
+          <span>Hemen Ara</span>
+          <Icon name="heroicons:phone" class="text-xl" />
+        </a>
+      </div>
+    </transition>
   </header>
 </template>
+
+<style scoped>
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

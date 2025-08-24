@@ -1,5 +1,7 @@
 # Korkuluk
 
+Korkuluk sistemleri, balkon, teras, merdiven ve benzeri alanlarda güvenliği sağlarken yapıya estetik bir görünüm katan önemli yapı elemanlarıdır. Kullanılan malzeme ve tasarım seçeneklerine göre hem dayanıklılık hem de dekoratif katkı sunar. Modern mimaride şeffaf cam panellerden hafif alüminyum profillere kadar farklı çözümlerle, hem iç hem de dış mekanlarda uzun ömürlü ve şık uygulamalar yapılmaktadır.
+
 ## Camlı Korkuluk
 
 Camlı korkuluk, balkon, teras ve merdiven gibi alanlarda güvenliği sağlarken şeffaf yapısıyla ferah ve modern bir görünüm sunan yapı elemanıdır. Dayanıklı temperli cam ve paslanmaz çelik ya da alüminyum gibi taşıyıcılarla üretilen bu sistemler, hem iç hem de dış mekanlarda estetik ve işlevselliği bir araya getirir. Şeffaf yapısı sayesinde geniş bir görüş açısı sağlayan camlı korkuluklar, modern mimari projelerde sıkça tercih edilir ve minimal tasarımlar için ideal bir çözümdür.

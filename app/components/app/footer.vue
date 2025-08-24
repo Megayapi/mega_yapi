@@ -1,9 +1,10 @@
 <script setup lang="ts">
-const firstProject = useProjectStore().projects[0]
+const { data: home } = await useAsyncData('about', () =>
+  queryCollection('about').first())
 </script>
 
 <template>
-  <footer class="bg-[#0d1126] text-gray-300 pt-16 pb-8 px-6">
+  <footer class="bg-[#0d1126] text-gray-300 pt-16 pb-8 px-6 mt-24">
     <div class="max-w-7xl mx-auto grid gap-12 md:grid-cols-3">
       <!-- Sütun 1: Hakkında -->
       <div>
@@ -11,10 +12,7 @@ const firstProject = useProjectStore().projects[0]
           Hakkımızda
         </h3>
         <p class="text-sm leading-relaxed opacity-80">
-          <!-- Buraya firma hakkında kısa bir açıklama yazabilirsin -->
-          Mega Yapı olarak cam balkon, PVC doğrama ve ayna uygulamalarıyla yaşam alanlarınıza estetik ve fonksiyonellik
-          katıyoruz. Yüksek işçilik kalitesi ve müşteri memnuniyetini ön planda tutarak güvenilir, hızlı ve profesyonel
-          hizmet sunuyoruz
+          {{ home?.description }}
         </p>
       </div>
 
@@ -25,27 +23,24 @@ const firstProject = useProjectStore().projects[0]
         </h3>
         <ul class="space-y-2 text-sm">
           <li>
-            <button class="hover:text-white transition" @click="navigateToSection('home')">
+            <a href="#home" class="hover:text-white transition">
               Anasayfa
-            </button>
+            </a>
           </li>
           <li>
-            <button class="hover:text-white transition" @click="navigateToSection('comments')">
+            <a href="#comments" class="hover:text-white transition">
               Müşteri Yorumları
-            </button>
+            </a>
           </li>
           <li>
-            <button class="hover:text-white transition" @click="navigateToSection('contact')">
+            <a href="#contact" class="hover:text-white transition">
               İletişim
-            </button>
+            </a>
           </li>
           <li>
-            <button
-              v-if="firstProject" class="hover:text-white transition"
-              @click="navigateToSection(firstProject.href.replace('#', ''))"
-            >
+            <a href="#projects" class="hover:text-white transition">
               Hizmetlerimiz
-            </button>
+            </a>
           </li>
         </ul>
       </div>
@@ -56,10 +51,11 @@ const firstProject = useProjectStore().projects[0]
           İletişim
         </h3>
         <ul class="space-y-2 text-sm">
-          <li>📞 0 544 960 69 80</li>
-          <li>📞 0 536 823 30 70</li>
-          <li>📍 Bursa / Yıldırım</li>
-          <li>✉️ yapimegabursa@gmail.com</li>
+          <li v-for="(p, i) in home?.phones" :key="i">
+            📞 {{ p }}
+          </li>
+          <li>📍 {{ home?.address }}</li>
+          <li>✉️ {{ home?.email }}</li>
         </ul>
       </div>
     </div>

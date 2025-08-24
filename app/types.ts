@@ -1,10 +1,7 @@
 declare global {
-  export interface Project {
+  export interface Comment {
     name: string
-    description: string
-    images: string[]
-    key: string
-    href: string
-    getContent: () => Promise<any>
+    date: string
+    content: string
   }
 }
