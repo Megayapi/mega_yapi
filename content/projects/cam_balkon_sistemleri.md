@@ -31,6 +31,7 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 <details>
   <summary>🌿## Katlanır Cam Balkon Sistemleri
 
+
 ### Katlanır Cam Balkon ile Dört Mevsim Ferah Yaşam Alanları
 
 *Katlanır cam balkon*, cam panellerin raylı sistem üzerinde katlanarak toplandığı modern bir çözümdür. Geniş açıklıklara uygundur, alan tasarrufu sağlar.
