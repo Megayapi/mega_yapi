@@ -28,8 +28,7 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 
 # Katlanır Cam Balkon
 
-<details>
-  <summary>🌿## Katlanır Cam Balkon Sistemleri
+## Katlanır Cam Balkon Sistemleri
 
 
 ### Katlanır Cam Balkon ile Dört Mevsim Ferah Yaşam Alanları
@@ -71,7 +70,7 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 - *Kışın kullanılabilir mi?*  
   Evet. Isıcam ile yüksek yalıtım sağlar.
 
-</details>
+
 # Sürme Cam Balkon
 
 ## Sürme Cam Balkon ile Şeffaf Konfor ve Maksimum Alan Kazancı
