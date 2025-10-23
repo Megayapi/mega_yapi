@@ -25,29 +25,6 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 - Teraslar  
 - Ofis ve ticari alanlar  
 
----
-
-## Cam Balkon Sistem Çeşitlerimiz
-
-- *Katlanır Cam Balkon*  
-- *Sürme Cam Balkon*  
-- *Giyotin Cam Balkon*
-
-> Her biri hakkında detaylı bilgi için ilgili başlıklara göz atın.
-
----
-
-## Neden Mega Yapı?
-
-✅ Yerinde keşif ve ücretsiz danışmanlık  
-✅ Uzman montaj ekibi  
-✅ 1. sınıf malzeme ve işçilik  
-✅ Garanti ve teknik destek  
-
-> Cam balkon çözümlerimiz hakkında detaylı bilgi almak veya ücretsiz keşif talep etmek için bizimle iletişime geçin.  
-👉 [İletişim Sayfası](#)
-
----
 
 # Katlanır Cam Balkon
 
@@ -92,17 +69,6 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 - *Kışın kullanılabilir mi?*  
   Evet. Isıcam ile yüksek yalıtım sağlar.
 
-#### 📞 Mega Yapı ile Çalışmanın Avantajları
-📍 Yerinde keşif ve ölçüm  
-🛠 Profesyonel montaj  
-✅ Uygun fiyat  
-🕒 Zamanında teslim  
-🛡 Garantili ürün  
-
-👉 [Ücretsiz Keşif Talep Et](#)  
-👉 [Bizimle İletişime Geçin](#)
-
----
 
 # Sürme Cam Balkon
 
