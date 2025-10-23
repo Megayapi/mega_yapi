@@ -6,18 +6,6 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 *Mega Yapı* olarak sunduğumuz cam balkon çözümleri; kaliteli malzeme, uzman işçilik ve uzun ömürlü kullanım garantisiyle yaşam alanlarınızı değerli kılar.
 
 ## Modern, Konforlu ve Estetik Yaşam Alanları
----
-
-### 📸 Galeri
-Küçük görsellere tıklayarak büyütebilirsiniz:
-
-| ![Cam Balkon 1](image1-thumb.jpg) | ![Cam Balkon 2](image2-thumb.jpg) | ![Cam Balkon 3](image3-thumb.jpg) |
-|:--:|:--:|:--:|
-| Cam Balkon 1 | Cam Balkon 2 | Cam Balkon 3 |
-
-> Görseller temsili olup, sistem tipine göre farklılık gösterebilir.
-
----
 
 ## Cam Balkonun Avantajları
 
