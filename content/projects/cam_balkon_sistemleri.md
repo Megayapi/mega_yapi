@@ -52,7 +52,7 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 #### 🔧 Teknik Özellikler
 | Özellik | Detay |
 |----------|-------|
-| Cam Tipi | 8–31 mm temperli cam |
+| Cam Tipi | 8 – 31 mm temperli cam |
 | Açılma Şekli | Sağa – sola katlanabilir |
 | Profil | Elektrostatik boyalı alüminyum |
 | Renk | Beyaz, Antrasit, Ahşap desen |
@@ -93,7 +93,7 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 #### 🔧 Teknik Özellikler
 | Özellik | Detay |
 |----------|-------|
-| Cam Tipi | 8–20 mm temperli cam |
+| Cam Tipi | 8 – 20 mm temperli cam |
 | Açılma Şekli | Yana kayar |
 | Ray Sistemi | Alüminyum, sessiz |
 | Profil | Elektrostatik boyalı |
@@ -144,7 +144,7 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 | Özellik | Detay |
 |----------|-------|
 | Sistem Tipi | Motorlu / manuel dikey sürgü |
-| Cam Tipi | 8–20 mm temperli cam |
+| Cam Tipi | 8 – 20 mm temperli cam |
 | Kontrol | Uzaktan kumanda / panel |
 | Profil | Elektrostatik boyalı alüminyum |
 | Güvenlik | Otomatik kilit, çocuk emniyeti |
