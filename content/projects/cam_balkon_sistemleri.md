@@ -27,8 +27,6 @@ Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale 
 
 # Katlanır Cam Balkon
 
-## Katlanır Cam Balkon Sistemleri
-
 > Katlanır cam balkon ile dört mevsim ferah yaşam alanları
 
 Katlanır cam balkon, cam panellerin raylı sistem üzerinde katlanarak toplandığı modern bir çözümdür. Geniş açıklıklara uygundur ve alan tasarrufu sağlar.
