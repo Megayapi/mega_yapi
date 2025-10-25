@@ -13,6 +13,9 @@ const { data: projects } = await useAsyncData(() =>
 const { data: comments } = await useAsyncData(
   () => queryCollection('comments').first(),
 )
+
+const { data: sss } = await useAsyncData(() =>
+  queryCollection('sss').first())
 </script>
 
 <template>
@@ -47,6 +50,15 @@ const { data: comments } = await useAsyncData(
         <CardProject
           v-for="project in projects" :key="project.id" :project="project" @click="navigateTo(project.path)"
         />
+      </div>
+    </section>
+
+    <section id="sss" class="mx-auto max-w-7xl mt-12 md:px-0 px-2">
+      <h1 class="text-3xl font-semibold tracking-tight text-balance text-gray-900 lg:text-5xl mb-6">
+        Sıkça Sorulan Sorular
+      </h1>
+      <div class="grid md:grid-cols-2 grid-cols-1 gap-6">
+        <Accordion :items="(sss?.meta.sss as { question: string, answer: string }[])" />
       </div>
     </section>
 

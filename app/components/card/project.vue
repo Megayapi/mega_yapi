@@ -11,7 +11,7 @@ defineProps<{ project: any }>()
       {{ project.title }}
     </h2>
     <img
-      :src="images.filter((img: Photo) => img.key === content.getProjectKey(project.path))[0]?.url" alt=""
+      :src="images.filter((img: Photo) => img.key === content.getProjectKey(project.path)).reverse()[0]?.url" alt=""
       class="object-cover h-64"
     >
     <div class="h-24 text-md py-4">

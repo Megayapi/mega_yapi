@@ -33,5 +33,14 @@ export default defineContentConfig({
       type: 'page',
       source: './projects/*.md',
     }),
+
+    sss: defineCollection({
+      type: 'data',
+      source: './sss.md',
+      schema: z.object({
+        question: z.string(),
+        answer: z.string(),
+      }),
+    }),
   },
 })

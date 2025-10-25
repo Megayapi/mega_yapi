@@ -10,6 +10,20 @@ const { data: project } = await useAsyncData('project', () =>
   queryCollection('projects')
     .where('path', '=', `/projects/${paramProjectsKey}`)
     .first())
+
+useHead(() => ({
+  title: project.value?.title ?? 'Proje',
+  meta: [
+    { name: 'description', content: project.value?.description ?? '' },
+    { property: 'og:title', content: project.value?.title ?? '' },
+    { property: 'og:description', content: project.value?.description ?? '' },
+    { property: 'og:type', content: 'article' },
+    { property: 'og:url', content: `https://megasite.com/projects/${paramProjectsKey}` },
+  ],
+  link: [
+    { rel: 'canonical', href: `https://megasite.com/projects/${paramProjectsKey}` },
+  ],
+}))
 </script>
 
 <template>
