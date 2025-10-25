@@ -1,6 +1,4 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const navItems = [
   { text: 'Hizmetlerimiz', href: 'projects' },
   { text: 'Müşteri Yorumları', href: 'comments' },
