@@ -1,5 +1,8 @@
 <script setup lang="ts">
 const show = ref(true)
+
+const { data } = await useAsyncData('for_instagram', () =>
+  queryCollection('about').first())
 </script>
 
 <template>
@@ -14,7 +17,8 @@ const show = ref(true)
         İnstagramdan bizi takip ederek <strong>%5 indirim</strong> kazanın.
       </p>
       <a
-        href="#"
+        :href="`https://${data.instagram}`"
+        target="_blank"
         class="ml-2 flex-none rounded-full bg-gray-900 px-3.5 py-1 text-sm font-semibold text-white shadow-xs hover:bg-gray-700"
       >
         Takip Et <span aria-hidden="true">&rarr;</span>

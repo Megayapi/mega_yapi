@@ -4,14 +4,13 @@ import HomePageImg from '../images/homepage/1.jpg'
 definePageMeta({
   name: 'home',
 })
-const { data: home } = await useAsyncData('about', () =>
+const { data: home } = await useAsyncData(() =>
   queryCollection('about').first())
 
-const { data: projects } = await useAsyncData('projects', () =>
+const { data: projects } = await useAsyncData(() =>
   queryCollection('projects').all())
 
 const { data: comments } = await useAsyncData(
-  'comments',
   () => queryCollection('comments').first(),
 )
 </script>
