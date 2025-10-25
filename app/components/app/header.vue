@@ -3,6 +3,7 @@ const navItems = [
   { text: 'Hizmetlerimiz', href: 'projects' },
   { text: 'Müşteri Yorumları', href: 'comments' },
   { text: 'İletişim', href: 'contact' },
+  { text: 'SSS', href: 'sss' },
 ]
 
 const isOpen = ref(false)
