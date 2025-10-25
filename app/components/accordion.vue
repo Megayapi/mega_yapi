@@ -1,4 +1,3 @@
-<!-- components/FaqAccordion.vue -->
 <script setup lang="ts">
 interface SSSItem { question: string, answer: string }
 
@@ -10,11 +9,11 @@ const openIndex = ref(0)
 </script>
 
 <template>
-  <div class="w-full divide-y divide-gray-200 rounded-lg border border-gray-200">
+  <div class="md:w-7xl divide-y divide-gray-200 rounded-lg border border-gray-200">
     <div
       v-for="(item, i) in props.items"
       :key="i"
-      class="group block w-full"
+      class="block w-full"
     >
       <button
         type="button"
