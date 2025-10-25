@@ -1,171 +1,135 @@
-
 # Cam Balkon Sistemleri
 
-
-Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale getirerek hem konfor hem de estetik kazandırır. Balkonlarınızı rüzgar, yağmur, toz ve dış etkenlerden korurken, manzaradan ödün vermeden şeffaf ve ferah bir ortam sağlar.  
+Cam balkon sistemleri, açık alanlarınızı dört mevsim kullanılabilir hale getirerek hem konfor hem de estetik kazandırır. Balkonlarınızı rüzgar, yağmur, toz ve dış etkenlerden korurken, manzaradan ödün vermeden şeffaf ve ferah bir ortam sağlar.
 *Mega Yapı* olarak sunduğumuz cam balkon çözümleri; kaliteli malzeme, uzman işçilik ve uzun ömürlü kullanım garantisiyle yaşam alanlarınızı değerli kılar.
 
-## Modern, Konforlu ve Estetik Yaşam Alanları
+> Modern, konforlu ve estetik yaşam alanları
 
 ## Cam Balkonun Avantajları
 
-- *Isı ve Ses Yalıtımı:* Özellikle ısıcam kullanıldığında dış ortamla sıcaklık farkı azalır, gürültü seviyesi düşer.  
-- *Alan Kazandırır:* Balkonlarınızı yaşam alanına dahil ederek evinize ekstra bir oda hissi verir.  
-- *Kolay Temizlik:* Katlanabilir veya sürgülü cam sistemleri kolayca temizlenebilir.  
-- *Güvenlik:* Temperli camlar darbelere karşı dayanıklıdır.  
-- *Estetik Görünüm:* Şeffaf yapısı binanın görünümünü bozmaz, modern bir hava katar.
+- **Isı ve Ses Yalıtımı:** Isıcam kullanıldığında dış ortamla sıcaklık farkı azalır, gürültü seviyesi düşer.
+- **Alan Kazandırır:** Balkonlarınızı yaşam alanına dahil ederek evinize ekstra bir oda hissi verir.
+- **Kolay Temizlik:** Katlanabilir veya sürgülü cam sistemleri kolayca temizlenebilir.
+- **Güvenlik:** Temperli camlar darbelere karşı dayanıklıdır.
+- **Estetik Görünüm:** Şeffaf yapısı binanın görünümünü bozmaz, modern bir hava katar.
 
 ---
 
 ## Kullanım Alanları
 
-- Daire ve apartman balkonları  
-- Kış bahçeleri  
-- Kafeler ve restoranlar  
-- Teraslar  
-- Ofis ve ticari alanlar  
+- Daire ve apartman balkonları
+- Kış bahçeleri
+- Kafeler ve restoranlar
+- Teraslar
+- Ofis ve ticari alanlar
 
+---
 
 # Katlanır Cam Balkon
 
 ## Katlanır Cam Balkon Sistemleri
 
+> Katlanır cam balkon ile dört mevsim ferah yaşam alanları
 
-### Katlanır Cam Balkon ile Dört Mevsim Ferah Yaşam Alanları
+Katlanır cam balkon, cam panellerin raylı sistem üzerinde katlanarak toplandığı modern bir çözümdür. Geniş açıklıklara uygundur ve alan tasarrufu sağlar.
 
-*Katlanır cam balkon*, cam panellerin raylı sistem üzerinde katlanarak toplandığı modern bir çözümdür. Geniş açıklıklara uygundur, alan tasarrufu sağlar.
+### Avantajları
 
-#### 💡 Avantajları
+- Tamamen açılabilir yapı
+- Kolay temizlik
+- Isı ve ses yalıtımı
+- Manzara kaybı olmaz
+- Dayanıklı temperli cam
 
-- %100 açılabilir yapı  
-- Kolay temizlik  
-- Isı ve ses yalıtımı  
-- Manzara kaybı olmaz  
-- Dayanıklı temperli cam  
+### Nerelerde Kullanılır?
 
-#### 📐 Nerelerde Kullanılır?
-- Daire balkonları  
-- Teraslar  
-- Kış bahçeleri  
-- Restoran ve kafe dış alanları  
-- Villa verandaları  
+- Daire balkonları
+- Teraslar
+- Kış bahçeleri
+- Restoran ve kafe dış alanları
+- Villa verandaları
 
-#### 🔧 Teknik Özellikler
-| Özellik | Detay |
-|----------|-------|
-| Cam Tipi | 8 – 31 mm temperli cam |
-| Açılma Şekli | Sağa – sola katlanabilir |
-| Profil | Elektrostatik boyalı alüminyum |
-| Renk | Beyaz, Antrasit, Ahşap desen |
-| Kilit | İçten kilitlemeli sistem |
-| Conta | EPDM su ve toz geçirmez |
+### Teknik Özellikler
 
-> Tüm sistemlerimiz *TSE* ve *CE* belgelerine sahiptir.
+| Özellik        | Detay                                |
+|----------------|---------------------------------------|
+| Cam Tipi       | 8 – 31 mm temperli cam                |
+| Açılma Şekli   | Sağa veya sola katlanabilir           |
+| Profil         | Elektrostatik boyalı alüminyum        |
+| Renk           | Beyaz, Antrasit, Ahşap desen seçenekleri |
+| Kilit          | İçten kilitlemeli sistem              |
+| Conta          | EPDM su ve toz geçirmez               |
 
-#### ❓ Sık Sorulan Sorular
-- *Rüzgâra dayanıklı mı?*  
-  Evet. Temperli cam ve alüminyum profillerle dayanıklıdır.  
-- *Temizliği zor mu?*  
-  Hayır. Tüm yüzeyler kolayca temizlenebilir.  
-- *Kışın kullanılabilir mi?*  
-  Evet. Isıcam ile yüksek yalıtım sağlar.
+> Tüm sistemlerimiz TSE ve CE belgelidir.
 
+---
 
 # Sürme Cam Balkon
 
-## Sürme Cam Balkon ile Şeffaf Konfor ve Maksimum Alan Kazancı
+> Sürme cam balkon ile şeffaf konfor ve maksimum alan kazancı
 
-*Sürme cam balkon*, panellerin raylar üzerinde yana kaydığı sistemdir. Yer kaplamaz ve sade bir görünüm sunar.
+Sürme cam balkon, panellerin raylar üzerinde yana kaydığı bir sistemdir. Yer kaplamaz ve sade bir görünüm sunar.
 
-#### 💡 Avantajları
-- Alan kazandırır  
-- Estetik görünüm  
-- Kolay kullanım  
-- Rüzgâr ve yağmur dayanımı  
-- Kolay temizlik  
+### Avantajları
 
-#### 📐 Nerelerde Kullanılır?
-- Dar balkonlar  
-- Verandalar  
-- Kafeler  
-- Teraslar  
-- AVM iç alanları  
+- Alan kazandırır
+- Estetik görünüm
+- Kolay kullanım
+- Rüzgar ve yağmur dayanımı
+- Kolay temizlik
 
-#### 🔧 Teknik Özellikler
-| Özellik | Detay |
-|----------|-------|
-| Cam Tipi | 8 – 20 mm temperli cam |
-| Açılma Şekli | Yana kayar |
-| Ray Sistemi | Alüminyum, sessiz |
-| Profil | Elektrostatik boyalı |
-| Sızdırmazlık | EPDM conta |
-| Renk | Beyaz, Gri, Antrasit, Ahşap |
+### Nerelerde Kullanılır?
 
-#### ❓ Sık Sorulan Sorular
-- *Camlar tamamen açılır mı?*  
-  Üst üste kayarak toplanır, tam açılım alanına göre değişir.  
-- *Ray sistemi bozulur mu?*  
-  Hayır. Toza dayanıklı uzun ömürlüdür.  
-- *Yalıtımı nasıldır?*  
-  Ses ve ısı yalıtımı güçlüdür.
+- Dar balkonlar
+- Verandalar
+- Kafeler
+- Teraslar
+- AVM iç alanları
 
-#### 📞 Mega Yapı Farkı
-✔ Dayanıklı ray sistemi  
-✔ Usta montaj ekibi  
-✔ Uygun fiyat  
-✔ Garanti ve destek  
+### Teknik Özellikler
 
-👉 [Ücretsiz Keşif Talep Et](#)  
-👉 [Bizimle İletişime Geçin](#)
+| Özellik        | Detay                          |
+|----------------|--------------------------------|
+| Cam Tipi       | 8 – 20 mm temperli cam         |
+| Açılma Şekli   | Yana kayar                     |
+| Ray Sistemi    | Alüminyum, sessiz çalışma      |
+| Profil         | Elektrostatik boyalı           |
+| Sızdırmazlık   | EPDM conta                     |
+| Renk           | Beyaz, Gri, Antrasit, Ahşap    |
 
 ---
 
 # Giyotin Cam Balkon
 
-## Akıllı Mekanlar için Yükselen Konfor
+> Akıllı mekanlar için yükselen konfor
 
-*Giyotin cam balkon*, cam panellerin dikey hareket ettiği motorlu veya manuel sistemdir. Modern, güvenli ve estetik bir çözümdür.
+Giyotin cam balkon, cam panellerin dikey hareket ettiği motorlu veya manuel sistemdir. Modern, güvenli ve estetik bir çözümdür.
 
-#### 💡 Avantajları
-- Çift fonksiyon: Korkuluk + pencere  
-- Motorlu sistem (kumanda kontrollü)  
-- Modern görünüm  
-- Yüksek yalıtım  
-- Çocuk güvenliği  
-- Dört mevsim kullanım  
+### Avantajları
 
-#### 📐 Nerelerde Kullanılır?
-- Kafeler ve restoranlar  
-- Villa terasları  
-- Kış bahçeleri  
-- Ofis balkonları  
-- Ticari vitrinler  
+- Çift fonksiyon: korkuluk ve pencere
+- Motorlu sistem seçeneği
+- Modern görünüm
+- Yüksek yalıtım
+- Çocuk güvenliği
+- Dört mevsim kullanım
 
-#### 🔧 Teknik Özellikler
-| Özellik | Detay |
-|----------|-------|
-| Sistem Tipi | Motorlu / manuel dikey sürgü |
-| Cam Tipi | 8 – 20 mm temperli cam |
-| Kontrol | Uzaktan kumanda / panel |
-| Profil | Elektrostatik boyalı alüminyum |
-| Güvenlik | Otomatik kilit, çocuk emniyeti |
-| Yalıtım | EPDM conta |
-| Panel Sayısı | 2 veya 3 |
+### Nerelerde Kullanılır?
 
-#### ❓ Sık Sorulan Sorular
-- *Uzaktan kumanda ile çalışır mı?*  
-  Evet. Motorlu modellerde mümkündür.  
-- *Çocuklar için güvenli mi?*  
-  Evet. Alt panel sabit ve güvenlik sensörlüdür.  
-- *Enerji tüketimi fazla mı?*  
-  Hayır. Düşük voltajla çalışır.
+- Kafeler ve restoranlar
+- Villa terasları
+- Kış bahçeleri
+- Ofis balkonları
+- Ticari vitrinler
 
-#### 📞 Mega Yapı ile Giyotin Sistem Farkı
-🧠 Akıllı sistem çözümleri  
-🔧 Profesyonel montaj  
-⚙ Kaliteli motor  
-📞 Teknik servis  
-📋 Projeye özel planlama  
+### Teknik Özellikler
 
-👉 [Ücretsiz Keşif Talep Et](#)  
-👉 [Bizimle İletişime Geçin](#)
+| Özellik        | Detay                                      |
+|----------------|---------------------------------------------|
+| Sistem Tipi    | Motorlu veya manuel dikey sürgü             |
+| Cam Tipi       | 8 – 20 mm temperli cam                      |
+| Kontrol        | Uzaktan kumanda veya kontrol paneli         |
+| Profil         | Elektrostatik boyalı alüminyum              |
+| Güvenlik       | Otomatik kilit, çocuk emniyet sistemi       |
+| Yalıtım        | EPDM conta                                  |
+| Panel Sayısı   | 2 veya 3 panel                               |
