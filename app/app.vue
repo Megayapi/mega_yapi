@@ -7,11 +7,9 @@ useHead({
     { property: 'og:title', content: 'Mega Yapı' },
     { property: 'og:description', content: 'Cam balkon, PVC, duşakabin ve cam sistemlerinde profesyonel çözümler.' },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: 'https://megasite.com' },
-    { property: 'og:image', content: '/og-image.jpg' },
-    { name: 'twitter:card', content: 'summary_large_image' },
+    { property: 'og:url', content: 'https://yapimega.com' },
   ],
-  link: [{ rel: 'canonical', href: 'https://megasite.com' }],
+  link: [{ rel: 'canonical', href: 'https://yapimega.com' }],
 })
 </script>
 

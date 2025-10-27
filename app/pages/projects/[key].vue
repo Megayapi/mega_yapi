@@ -18,16 +18,16 @@ useHead(() => ({
     { property: 'og:title', content: project.value?.title ?? '' },
     { property: 'og:description', content: project.value?.description ?? '' },
     { property: 'og:type', content: 'article' },
-    { property: 'og:url', content: `https://megasite.com/projects/${paramProjectsKey}` },
+    { property: 'og:url', content: `https://yapimega.com/projects/${paramProjectsKey}` },
   ],
   link: [
-    { rel: 'canonical', href: `https://megasite.com/projects/${paramProjectsKey}` },
+    { rel: 'canonical', href: `https://yapimega.com/projects/${paramProjectsKey}` },
   ],
 }))
 </script>
 
 <template>
-  <div class="max-w-7xl flex flex-col mx-auto mt-12">
+  <div class="max-w-7xl md:p-0 p-4 flex flex-col mx-auto mt-12">
     <div class="content">
       <ContentRenderer v-if="project" :value="project" />
     </div>
@@ -46,9 +46,13 @@ useHead(() => ({
 
 <style>
 .content h1 {
-  font-size: 2.25rem; /* 36px */
-  font-weight: 700;
-  margin: 1.5rem 0 1rem;
+  font-size: 2.75rem; /* 44px */
+  font-weight: 800;
+  margin: 2rem 0 1.25rem;
+  line-height: 1.2;
+  color: oklch(62.3% 0.214 259.815);
+  border-bottom: 1px solid oklch(90% 0 0);
+  padding-bottom: .5rem;
 }
 
 .content h2 {
