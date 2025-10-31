@@ -4,7 +4,7 @@ Bakım ve onarım, yapıların ve sistemlerin uzun süre boyunca verimli, güven
 
 Düzenli bakım çalışmaları, yapıların estetik görünümünde meydana gelebilecek bozulmaları da önleyerek, yapının dış görünüşünü ve mimari değerini korur. Bunun yanı sıra, yapısal ve işlevsel performansın devamlılığını sağlayarak, enerji verimliliğini artırır ve bakım masraflarının daha da yükselmesine neden olabilecek büyük sorunların önüne geçer. Bakım ve onarım işlemleri, binaların zamanla aşınan veya dış etkenlerden zarar gören bileşenlerini ilk günkü haline getirerek, hem güvenli hem de konforlu bir yaşam alanı sunmayı hedefler. Bu süreçler, yapıların hem estetik hem de işlevsel açıdan mükemmel durumda kalmasını sağlar. İhmal edilmesi durumunda ise küçük çaplı arızalar büyüyerek daha maliyetli sorunlara yol açabilir. Bu nedenle, periyodik bakım ve onarım çalışmaları, uzun vadeli sürdürülebilirlik ve maliyet kontrolü açısından büyük önem taşır.
 
-# BAKIM ONARIM DA NELERİ KAPSAR;
+# BAKIM ONARIM DA NELERİ KAPSAR ;
 
 Motorlu Cam Kapılar: "Motorlu cam kapı bozulması tamiri" ve "Cam kapı motor değişimi ve ayarı" hizmetlerinde hangi tip sistemlere (otomatik kayar kapı, döner kapı vb.) hizmet veriyorsunuz?
 
